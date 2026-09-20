@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "diagram_type": "sequence",
+  "meta": {
+    "title": "GameNetty 客户端登录时序",
+    "locale": "zh-CN",
+    "output": "Docs/login-flow/login-sequence.html",
+    "viewBox": [1000, 640],
+    "quality_profile": "showcase",
+    "column_fit": "spread",
+    "views": [
+      {
+        "id": "client-kickoff",
+        "label": "客户端发起",
+        "focus": ["ui", "main", "netclient"],
+        "note": "LoginPanel 把账号密码交给 Main Fiber，再 Actor Call 到 NetClient。"
+      },
+      {
+        "id": "discover-realm",
+        "label": "发现与 Realm",
+        "focus": ["netclient", "router", "realm"],
+        "note": "HTTP 拿 Realm 列表，再 WebSocket 发送 C2R_Login。"
+      },
+      {
+        "id": "gate-enter",
+        "label": "Gate 进服",
+        "focus": ["realm", "gate", "netclient"],
+        "note": "Realm 向 Gate 要一次性 Key，客户端拿 Key 连 Gate。"
+      },
+      {
+        "id": "return-ui",
+        "label": "回到主线程",
+        "focus": ["gate", "netclient", "main", "ui"],
+        "note": "G2C_LoginGate.PlayerId 经 Actor 回包回到 LoginHelper。"
+      }
+    ]
+  },
+  "participants": [
+    { "id": "ui", "type": "frontend", "label": "登录界面", "sublabel": "UI 按钮" },
+    { "id": "main", "type": "frontend", "label": "Main Fiber", "sublabel": "ClientSender" },
+    { "id": "netclient", "type": "backend", "label": "NetClient", "sublabel": "主线程" },
+    { "id": "router", "type": "cloud", "label": "RouterManager", "sublabel": "HTTP :30300" },
+    { "id": "realm", "type": "backend", "label": "Realm", "sublabel": "WS :30002" },
+    { "id": "gate", "type": "security", "label": "Gate", "sublabel": "WS :30003" }
+  ],
+  "segments": [
+    { "from": 150, "to": 240, "label": "发起登录" },
+    { "from": 258, "to": 410, "label": "发现 + Realm" },
+    { "from": 428, "to": 555, "label": "Gate + 回包" }
+  ],
+  "messages": [
+    { "id": "click-login", "from": "ui", "to": "main", "y": 175, "label": "LoginHelper.Login", "variant": "default" },
+    { "id": "actor-login", "from": "main", "to": "netclient", "y": 208, "label": "Main2NetClient_Login", "variant": "emphasis" },
+    { "id": "get-router", "from": "netclient", "to": "router", "y": 280, "label": "GET /get_router", "variant": "default" },
+    { "id": "router-json", "from": "router", "to": "netclient", "y": 308, "label": "Realms JSON", "variant": "return" },
+    { "id": "c2r-login", "from": "netclient", "to": "realm", "y": 345, "label": "ws C2R_Login", "variant": "emphasis" },
+    { "id": "get-key", "from": "realm", "to": "gate", "y": 375, "label": "R2G_GetLoginKey", "variant": "security" },
+    { "id": "r2c-login", "from": "realm", "to": "netclient", "y": 400, "label": "R2C_Login", "variant": "return" },
+    { "id": "c2g-login", "from": "netclient", "to": "gate", "y": 450, "label": "ws C2G_LoginGate", "variant": "emphasis" },
+    { "id": "g2c-login", "from": "gate", "to": "netclient", "y": 480, "label": "G2C_LoginGate", "variant": "return" },
+    { "id": "actor-reply", "from": "netclient", "to": "main", "y": 510, "label": "NetClient2Main_Login", "variant": "return" },
+    { "id": "show-id", "from": "main", "to": "ui", "y": 538, "label": "playerId 日志", "variant": "return" }
+  ],
+  "activations": [
+    { "participant": "main", "from": 170, "to": 545, "type": "frontend" },
+    { "participant": "netclient", "from": 203, "to": 518, "type": "backend" },
+    { "participant": "router", "from": 275, "to": 315, "type": "cloud" },
+    { "participant": "realm", "from": 340, "to": 408, "type": "backend" },
+    { "participant": "gate", "from": 370, "to": 488, "type": "security" }
+  ],
+  "cards": [
+    {
+      "dot": "emerald",
+      "title": "要点",
+      "items": [
+        "外网 WebSocket 先连 Realm:30002，再连 Gate:30003；内网地址改写成公网 IP",
+        "Gate 一次性 Key 校验通过后绑定 Player，PlayerId 沿 Actor 回包到 UI"
+      ]
+    }
+  ]
+}

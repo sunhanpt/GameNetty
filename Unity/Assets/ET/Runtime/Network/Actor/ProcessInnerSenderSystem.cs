@@ -79,7 +79,7 @@ namespace ET
 
             if (self.NeedException && ErrorCore.IsRpcNeedThrowException(response.Error))
             {
-                self.SetException(new RpcException(response.Error, $"Rpc error: actorId: {self.ActorId} request: {self.RequestType.FullName}, response: {response}"));
+                self.SetException(new RpcException(response.Error, $"Rpc error: actorId: {self.ActorId} request: {self.RequestType.FullName}, message: {response.Message}, response: {response}"));
                 return;
             }
 

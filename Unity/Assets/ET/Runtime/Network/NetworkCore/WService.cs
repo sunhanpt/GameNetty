@@ -36,6 +36,7 @@ namespace ET
         public WService()
         {
             this.ServiceType = ServiceType.Outer;
+            this.Id = 1;
         }
 
         private long GetId

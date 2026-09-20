@@ -19,7 +19,7 @@ namespace ET
 #if USE_UNITY_WEBREQUEST || UNITY_WEBGL
                 string result = await GetRequest(link);
 #else
-                using HttpClient httpClient = new();
+                using HttpClient httpClient = new() { Timeout = TimeSpan.FromSeconds(10) };
                 HttpResponseMessage response =  await httpClient.GetAsync(link);
                 string result = await response.Content.ReadAsStringAsync();
 #endif
