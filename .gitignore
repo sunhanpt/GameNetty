@@ -10,3 +10,6 @@ Logs/
 
 Publish/
 Server/Server.sln.DotSettings.user
+
+# 含镜像仓库密码，不要提交
+DockerPush.bat

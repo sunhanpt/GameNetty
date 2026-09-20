@@ -12,7 +12,7 @@ namespace ET.Server
             root.AddComponent<TimerComponent>();
             root.AddComponent<CoroutineLockComponent>();
             StartProcessConfig startProcessConfig = StartProcessConfigCategory.Instance.Get(fiberInit.Fiber.Process);
-            root.AddComponent<ProcessOuterSender, IPEndPoint>(startProcessConfig.IPEndPoint);
+            root.AddComponent<ProcessOuterSender, IPEndPoint>(NetworkHelper.ListenEndPoint(startProcessConfig.Port, startProcessConfig.IPEndPoint));
             root.AddComponent<ProcessInnerSender>();
 
             await ETTask.CompletedTask;

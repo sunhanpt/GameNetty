@@ -31,7 +31,13 @@ namespace ET
                         Console.Write($"{modeContex?.Mode ?? ""}> ");
                         return Console.In.ReadLine();
                     }, self.CancellationTokenSource.Token);
-                    
+
+                    // Docker/无 TTY 时 ReadLine 为 null，不能 Trim
+                    if (line == null)
+                    {
+                        return;
+                    }
+
                     line = line.Trim();
 
                     switch (line)

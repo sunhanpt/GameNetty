@@ -18,6 +18,7 @@ namespace ET
 
         public WService(IEnumerable<string> prefixs)
         {
+            this.ServiceType = ServiceType.Outer;
             this.ThreadSynchronizationContext = new ThreadSynchronizationContext();
             
             this.httpListener = new HttpListener();

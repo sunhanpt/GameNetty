@@ -1,0 +1,46 @@
+# 腾讯云 CVM（Linux）拉取个人版镜像后启动。
+# 用法：
+#   export ET_OUTER_IP=<云服务器公网IP>
+#   docker compose -f docker-compose.cvm.yml up -d
+#
+# 安全组放行：30300/tcp（RouterManager）、30301-30304/tcp（Router WebSocket）、
+# 30002-30004/tcp（Realm/Gate WebSocket，可选直连）、27017/tcp（Mongo，建议仅内网）
+
+name: gamenetty
+
+services:
+  mongo:
+    image: mongo:6.0
+    container_name: gamenetty-mongo
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - mongo-data:/data/db
+    command: ["mongod", "--bind_ip_all"]
+
+  server:
+    image: ${TCR_IMAGE:-ccr.ccs.tencentyun.com/gamenetty/server:latest}
+    container_name: gamenetty-server
+    restart: unless-stopped
+    network_mode: host
+    depends_on:
+      - mongo
+    environment:
+      TZ: Asia/Shanghai
+      ET_BIND_ANY: "1"
+      ET_INNER_IP: "127.0.0.1"
+      ET_OUTER_IP: ${ET_OUTER_IP:-127.0.0.1}
+      MONGO_HOST: "127.0.0.1"
+      MONGO_PORT: "27017"
+    volumes:
+      - logs-data:/app/Logs
+    command:
+      - --AppType=Server
+      - --Process=1
+      - --StartConfig=StartConfig/Localhost
+      - --Console=0
+      - --LogLevel=1
+
+volumes:
+  mongo-data:
+  logs-data:

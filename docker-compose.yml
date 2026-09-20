@@ -1,0 +1,58 @@
+name: gamenetty
+
+services:
+  mongo:
+    image: mongo:6.0
+    container_name: gamenetty-mongo
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    command: ["mongod", "--bind_ip_all"]
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+
+  server:
+    image: ${TCR_IMAGE:-ccr.ccs.tencentyun.com/gamenetty/server:latest}
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: gamenetty-server
+    restart: unless-stopped
+    depends_on:
+      mongo:
+        condition: service_healthy
+    environment:
+      TZ: Asia/Shanghai
+      ET_BIND_ANY: "1"
+      ET_INNER_IP: "127.0.0.1"
+      ET_OUTER_IP: ${ET_OUTER_IP:-127.0.0.1}
+      MONGO_HOST: mongo
+      MONGO_PORT: "27017"
+    ports:
+      - "20001:20001"
+      - "30002:30002"
+      - "30003:30003"
+      - "30004:30004"
+      - "30300:30300"
+      - "30301:30301"
+      - "30302:30302"
+      - "30303:30303"
+      - "30304:30304"
+    volumes:
+      - logs-data:/app/Logs
+    command:
+      - --AppType=Server
+      - --Process=1
+      - --StartConfig=StartConfig/Localhost
+      - --Console=0
+      - --LogLevel=1
+
+volumes:
+  mongo-data:
+  logs-data:

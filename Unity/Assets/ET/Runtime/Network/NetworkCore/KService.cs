@@ -62,7 +62,7 @@ namespace ET
                     this.Transport = new UdpTransport(ipEndPoint);
                     break;
                 case NetworkProtocol.Websocket:
-                    this.Transport = new WebsocketTransport(new []{$"http://{this.ipEndPoint}/"});
+                    this.Transport = new WebsocketTransport(new[] { $"http://*:{ipEndPoint.Port}/" });
                     break;
                 default:
                     throw new ArgumentOutOfRangeException($"{this.Protocol}");

@@ -4,9 +4,9 @@ namespace ET
 {
     public partial class StartProcessConfig
     {
-        public string InnerIP => this.StartMachineConfig.InnerIP;
+        public string InnerIP => NetworkHelper.EnvOr("ET_INNER_IP", this.StartMachineConfig.InnerIP);
 
-        public string OuterIP => this.StartMachineConfig.OuterIP;
+        public string OuterIP => NetworkHelper.EnvOr("ET_OUTER_IP", this.StartMachineConfig.OuterIP);
 
         // 内网地址外网端口，通过防火墙映射端口过来
         private IPEndPoint ipEndPoint;

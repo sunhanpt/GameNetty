@@ -15,11 +15,8 @@ namespace ET.Server
             root.AddComponent<ProcessInnerSender>();
             root.AddComponent<MessageSender>();
             StartSceneConfig startSceneConfig = StartSceneConfigCategory.Instance.Get(root.Fiber.Id);
-            root.AddComponent<NetComponent, IPEndPoint, NetworkProtocol>(startSceneConfig.InnerIPPort, NetworkProtocol.UDP);
-
-#if DOTNET_WEBGL
-            root.AddComponent<NetWSComponent, IEnumerable<string>>(new[]{$"http://*:{startSceneConfig.Port}/"});
-#endif
+            root.AddComponent<NetComponent, IPEndPoint, NetworkProtocol>(NetworkHelper.ListenEndPoint(startSceneConfig.Port, startSceneConfig.InnerIPPort), NetworkProtocol.UDP);
+            root.AddComponent<NetWSComponent, IEnumerable<string>>(new[] { NetworkHelper.WebSocketPrefix(startSceneConfig.Port) });
             await ETTask.CompletedTask;
         }
     }

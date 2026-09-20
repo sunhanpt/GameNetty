@@ -42,6 +42,28 @@ namespace ET
 			return returnIpAddress;
 		}
 		
+		public static string EnvOr(string name, string fallback)
+		{
+			string value = Environment.GetEnvironmentVariable(name);
+			return string.IsNullOrWhiteSpace(value) ? fallback : value;
+		}
+
+		public static bool BindAny => Environment.GetEnvironmentVariable("ET_BIND_ANY") == "1";
+
+		public static IPEndPoint ListenEndPoint(int port, IPEndPoint fallback)
+		{
+			if (BindAny)
+			{
+				return new IPEndPoint(IPAddress.Any, port);
+			}
+			return fallback;
+		}
+
+		public static string WebSocketPrefix(int port)
+		{
+			return $"http://*:{port}/";
+		}
+
 		public static IPEndPoint ToIPEndPoint(string host, int port)
 		{
 			return new IPEndPoint(IPAddress.Parse(host), port);

@@ -10,8 +10,8 @@ namespace ET.Server
             Scene root = fiberInit.Fiber.Root;
             StartSceneConfig startSceneConfig = StartSceneConfigCategory.Instance.Get((int)root.Id);
             
-            // 开发期间使用OuterIPPort，云服务器因为本机没有OuterIP，所以要改成InnerIPPort，然后在云防火墙中端口映射到InnerIPPort
-            root.AddComponent<RouterComponent, IPEndPoint, string>(startSceneConfig.OuterIPPort, startSceneConfig.StartProcessConfig.InnerIP);
+            // 开发期间使用OuterIPPort；云服务器本机没有公网 IP 时改为监听 0.0.0.0（ET_BIND_ANY=1），安全组/防火墙做端口映射
+            root.AddComponent<RouterComponent, IPEndPoint, string>(NetworkHelper.ListenEndPoint(startSceneConfig.Port, startSceneConfig.OuterIPPort), startSceneConfig.StartProcessConfig.InnerIP);
             Log.Console($"Router create: {root.Fiber.Id}");
             await ETTask.CompletedTask;
         }

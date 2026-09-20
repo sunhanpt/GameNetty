@@ -5,7 +5,7 @@ namespace ET
     /// </summary>
     public static partial class ConstValue
     {
-        public const string RouterHttpHost = "127.0.0.1";
+        public const string RouterHttpHost = "81.70.28.46";
         
         public const int RouterHttpPort = 30300;
         
