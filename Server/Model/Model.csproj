@@ -26,6 +26,7 @@
         <NoWarn>0169,0649,3021,8981,CS9193,CS9192</NoWarn>
     </PropertyGroup>
     <ItemGroup>
+        <Compile Include="..\..\Unity\Assets\GameScripts\GameProto\AdventureProtocol.cs" Link="Adventure\AdventureProtocol.cs" />
 
         <Compile Include="..\..\Unity\Assets\Scripts\Model\Server\**\*.cs"> 
             <Link>Server\%(RecursiveDir)%(FileName)%(Extension)</Link> 
@@ -48,6 +49,7 @@
         <ProjectReference Include="..\..\Share\Analyzer\Share.Analyzer.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
         <ProjectReference Include="..\..\Share\Share.SourceGenerator\Share.SourceGenerator.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
         <ProjectReference Include="..\Core\Core.csproj" />
+        <ProjectReference Include="..\CapybaraRules\CapybaraRules.csproj" />
         <ProjectReference Include="..\ThirdParty\ThirdParty.csproj" />
     </ItemGroup> 
     <ItemGroup>

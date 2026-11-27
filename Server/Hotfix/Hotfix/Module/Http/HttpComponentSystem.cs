@@ -1,6 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Net;
+using System.Threading;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 
 namespace ET.Server
 {
@@ -11,6 +14,13 @@ namespace ET.Server
         [EntitySystem]
         private static void Awake(this HttpComponent self, string address)
         {
+            if (self.IScene.SceneType == SceneType.RouterManager && LocalHttpHost.TryGetPort(address, out int port))
+            {
+                ThreadSynchronizationContext dispatcher = self.Fiber().ThreadSynchronizationContext;
+                self.LocalHost = new LocalHttpHost(port, false, (context, stopping) => ServeLocalRouter(context, dispatcher, stopping));
+                return;
+            }
+
             try
             {
                 self.Listener = new HttpListener();
@@ -28,17 +38,63 @@ namespace ET.Server
 
                 self.Accept().Coroutine();
             }
-            catch (HttpListenerException e)
+            catch (HttpListenerException e) when (OperatingSystem.IsWindows() && e.NativeErrorCode == 5)
             {
-                throw new Exception($"请先在cmd中运行: netsh http add urlacl url=http://*:你的address中的端口/ user=Everyone, address: {address}", e);
+                throw new InvalidOperationException($"Windows HTTP.sys 拒绝监听 {address}。请为运行服务端的账号配置对应的 URL ACL。", e);
             }
         }
         
         [EntitySystem]
         private static void Destroy(this HttpComponent self)
         {
-            self.Listener.Stop();
-            self.Listener.Close();
+            self.LocalHost?.Dispose();
+            self.LocalHost = null;
+            self.Listener?.Close();
+            self.Listener = null;
+        }
+
+        private static async Task ServeLocalRouter(HttpContext context, ThreadSynchronizationContext dispatcher, CancellationToken stopping)
+        {
+            if (context.Request.Path != "/get_router")
+            {
+                context.Response.StatusCode = StatusCodes.Status404NotFound;
+                return;
+            }
+
+            if (!HttpMethods.IsGet(context.Request.Method))
+            {
+                context.Response.StatusCode = StatusCodes.Status405MethodNotAllowed;
+                context.Response.Headers.Allow = HttpMethods.Get;
+                return;
+            }
+
+            using CancellationTokenSource abort = CancellationTokenSource.CreateLinkedTokenSource(stopping, context.RequestAborted);
+            CancellationToken cancelled = abort.Token;
+            TaskCompletionSource<byte[]> ready = new(TaskCreationOptions.RunContinuationsAsynchronously);
+            dispatcher.Post(() =>
+            {
+                if (cancelled.IsCancellationRequested) return;
+                try
+                {
+                    ready.TrySetResult(MongoHelper.ToJson(HttpGetRouterHandler.CreateResponse()).ToUtf8());
+                }
+                catch (Exception error)
+                {
+                    Log.Error(error);
+                    ready.TrySetException(error);
+                }
+            });
+
+            try
+            {
+                byte[] response = await ready.Task.WaitAsync(cancelled);
+                context.Response.ContentType = "application/json; charset=utf-8";
+                context.Response.ContentLength = response.Length;
+                await context.Response.Body.WriteAsync(response, cancelled);
+            }
+            catch (OperationCanceledException) when (cancelled.IsCancellationRequested)
+            {
+            }
         }
 
         private static async ETTask Accept(this HttpComponent self)

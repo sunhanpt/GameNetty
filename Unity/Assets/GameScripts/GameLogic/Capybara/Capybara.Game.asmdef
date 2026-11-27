@@ -1,0 +1,7 @@
+{
+    "name": "Capybara.Game",
+    "references": ["Capybara.Spine", "UnityEngine.UI"],
+    "overrideReferences": true,
+    "precompiledReferences": ["Newtonsoft.Json.dll"],
+    "autoReferenced": true
+}

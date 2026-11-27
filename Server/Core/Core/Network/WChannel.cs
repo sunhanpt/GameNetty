@@ -15,22 +15,31 @@ namespace ET
         private readonly WService Service;
 
         private readonly WebSocket webSocket;
+        private readonly Action onClosed;
 
         private readonly Queue<MemoryBuffer> queue = new();
 
         private bool isSending;
+        private bool isClosing;
+        private Task activeSend = Task.CompletedTask;
 
         private bool isConnected;
         
         private CancellationTokenSource cancellationTokenSource = new();
         
         public WChannel(long id, HttpListenerWebSocketContext webSocketContext, WService service)
+            : this(id, webSocketContext.WebSocket, service)
+        {
+            this.WebSocketContext = webSocketContext;
+        }
+
+        public WChannel(long id, WebSocket webSocket, WService service, Action onClosed = null)
         {
             this.Service = service;
             this.Id = id;
             this.ChannelType = ChannelType.Accept;
-            this.WebSocketContext = webSocketContext;
-            this.webSocket = webSocketContext.WebSocket;
+            this.webSocket = webSocket;
+            this.onClosed = onClosed;
 
             isConnected = true;
             
@@ -60,11 +69,23 @@ namespace ET
                 return;
             }
 
+            this.Id = 0;
             this.cancellationTokenSource.Cancel();
             this.cancellationTokenSource.Dispose();
             this.cancellationTokenSource = null;
 
-            this.webSocket.Dispose();
+            try
+            {
+                this.webSocket.Dispose();
+                while (this.queue.TryDequeue(out MemoryBuffer buffer))
+                {
+                    this.Service.Recycle(buffer);
+                }
+            }
+            finally
+            {
+                this.onClosed?.Invoke();
+            }
         }
 
         private async ETTask ConnectAsync(string url)
@@ -86,6 +107,11 @@ namespace ET
 
         public void Send(MemoryBuffer memoryBuffer)
         {
+            if (this.IsDisposed || this.isClosing)
+            {
+                this.Service.Recycle(memoryBuffer);
+                return;
+            }
             this.queue.Enqueue(memoryBuffer);
 
             if (this.isConnected)
@@ -96,56 +122,43 @@ namespace ET
 
         private async ETTask StartSend()
         {
-            if (this.IsDisposed)
+            if (this.IsDisposed || this.isClosing || this.isSending)
             {
                 return;
             }
 
+            this.isSending = true;
             try
             {
-                if (this.isSending)
+                while (!this.IsDisposed && !this.isClosing && this.queue.TryDequeue(out MemoryBuffer stream))
                 {
-                    return;
-                }
-
-                this.isSending = true;
-
-                while (true)
-                {
-                    if (this.queue.Count == 0)
-                    {
-                        this.isSending = false;
-                        return;
-                    }
-
-                    MemoryBuffer stream = this.queue.Dequeue();
-            
                     try
                     {
-                        await this.webSocket.SendAsync(stream.GetMemory(), WebSocketMessageType.Binary, true, cancellationTokenSource.Token);
-                        
+                        this.activeSend = this.webSocket.SendAsync(stream.GetMemory(), WebSocketMessageType.Binary, true,
+                            this.cancellationTokenSource.Token).AsTask();
+                        await this.activeSend;
+                    }
+                    finally
+                    {
                         this.Service.Recycle(stream);
-                        
-                        if (this.IsDisposed)
-                        {
-                            return;
-                        }
-                    }
-                    catch (TaskCanceledException e)
-                    {
-                        Log.Warning(e.ToString());
-                    }
-                    catch (Exception e)
-                    {
-                        Log.Error(e);
-                        this.OnError(ErrorCore.ERR_WebsocketSendError);
-                        return;
                     }
                 }
             }
+            catch (WebSocketException e) when (e.WebSocketErrorCode == WebSocketError.ConnectionClosedPrematurely)
+            {
+                this.OnError(ErrorCore.ERR_WebsocketPeerReset);
+            }
             catch (Exception e)
             {
-                Log.Error(e);
+                if (!this.IsDisposed && !this.isClosing)
+                {
+                    Log.Error(e);
+                    this.OnError(ErrorCore.ERR_WebsocketSendError);
+                }
+            }
+            finally
+            {
+                this.isSending = false;
             }
         }
 
@@ -180,7 +193,7 @@ namespace ET
 
                     if (receiveResult.MessageType == WebSocketMessageType.Close)
                     {
-                        this.OnError(ErrorCore.ERR_WebsocketPeerReset);
+                        await this.ReplyToClose();
                         return;
                     }
 
@@ -199,10 +212,47 @@ namespace ET
                     this.OnRead(memoryBuffer);
                 }
             }
+            catch (WebSocketException e) when (e.WebSocketErrorCode == WebSocketError.ConnectionClosedPrematurely)
+            {
+                this.OnError(ErrorCore.ERR_WebsocketPeerReset);
+            }
             catch (Exception e)
             {
-                Log.Error(e);
-                this.OnError(ErrorCore.ERR_WebsocketRecvError);
+                if (!this.IsDisposed)
+                {
+                    Log.Error(e);
+                    this.OnError(ErrorCore.ERR_WebsocketRecvError);
+                }
+            }
+        }
+
+        private async ETTask ReplyToClose()
+        {
+            this.isClosing = true;
+            using CancellationTokenSource timeout = new(400);
+            try
+            {
+                await this.activeSend.WaitAsync(timeout.Token);
+                if (!this.IsDisposed && this.webSocket.State == WebSocketState.CloseReceived)
+                {
+                    await this.webSocket.CloseOutputAsync(this.webSocket.CloseStatus ?? WebSocketCloseStatus.NormalClosure,
+                        this.webSocket.CloseStatusDescription, timeout.Token);
+                }
+            }
+            catch (OperationCanceledException)
+            {
+                // The peer may exit before receiving our reply.
+            }
+            catch (Exception e)
+            {
+                if (!this.IsDisposed && e is not WebSocketException { WebSocketErrorCode: WebSocketError.ConnectionClosedPrematurely })
+                {
+                    Log.Warning($"WChannel close reply failed: {this.RemoteAddress} {e.Message}");
+                }
+            }
+            finally
+            {
+                this.OnError(ErrorCore.ERR_WebsocketPeerReset);
             }
         }
         
@@ -221,13 +271,18 @@ namespace ET
         
         private void OnError(int error)
         {
-            Log.Info($"WChannel error: {error} {this.RemoteAddress}");
+            if (this.IsDisposed)
+            {
+                return;
+            }
+            string status = error == ErrorCore.ERR_WebsocketPeerReset ? "closed" : "error";
+            Log.Info($"WChannel {status}: {error} {this.RemoteAddress}");
 			
             long channelId = this.Id;
 			
-            this.Service.Remove(channelId);
+            this.Service.Remove(channelId, error);
 			
-            this.Service.ErrorCallback(channelId, error);
+            this.Service.ErrorCallback?.Invoke(channelId, error);
         }
     }
 }

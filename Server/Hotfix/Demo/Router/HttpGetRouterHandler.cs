@@ -10,6 +10,12 @@ namespace ET.Server
     {
         public async ETTask Handle(Scene scene, HttpListenerContext context)
         {
+            HttpHelper.Response(context, CreateResponse());
+            await ETTask.CompletedTask;
+        }
+
+        public static HttpGetRouterResponse CreateResponse()
+        {
             HttpGetRouterResponse response = HttpGetRouterResponse.Create();
             foreach (StartSceneConfig startSceneConfig in StartSceneConfigCategory.Instance.Realms)
             {
@@ -20,8 +26,7 @@ namespace ET.Server
             {
                 response.Routers.Add($"{startSceneConfig.StartProcessConfig.OuterIP}:{startSceneConfig.Port}");
             }
-            HttpHelper.Response(context, response);
-            await ETTask.CompletedTask;
+            return response;
         }
     }
 }

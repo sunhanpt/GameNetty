@@ -59,9 +59,11 @@ namespace ET
 			return fallback;
 		}
 
-		public static string WebSocketPrefix(int port)
+		public static string HttpListenerPrefix(int port)
 		{
-			return $"http://*:{port}/";
+			bool localOnly = !BindAny && string.Equals(Options.Instance?.StartConfig, Options.LocalhostStartConfig, StringComparison.OrdinalIgnoreCase);
+			string host = localOnly ? "127.0.0.1" : "*";
+			return $"http://{host}:{port}/";
 		}
 
 		public static IPEndPoint ToIPEndPoint(string host, int port)

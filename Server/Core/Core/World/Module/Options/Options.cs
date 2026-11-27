@@ -20,10 +20,12 @@ namespace ET
     
     public class Options: Singleton<Options>
     {
+        public const string LocalhostStartConfig = "StartConfig/Localhost";
+
         [Option("AppType", Required = false, Default = AppType.Server, HelpText = "AppType enum")]
         public AppType AppType { get; set; }
 
-        [Option("StartConfig", Required = false, Default = "StartConfig/Localhost")]
+        [Option("StartConfig", Required = false, Default = LocalhostStartConfig)]
         public string StartConfig { get; set; }
 
         [Option("Process", Required = false, Default = 1)]

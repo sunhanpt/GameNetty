@@ -1,0 +1,9 @@
+{
+  "Id": 1,
+  "Name": "渡口巡潮试炼",
+  "ChapterId": 2,
+  "DailyAttempts": 2,
+  "EnemyHealthBonus": 8,
+  "EnemyAttackBonus": 1,
+  "RewardCoins": 24
+}

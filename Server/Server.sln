@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThirdParty", "ThirdParty\Th
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loader", "Loader\Loader.csproj", "{87B9D9A1-12B6-4173-AB26-E8F52D0D09EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapybaraRules", "CapybaraRules\CapybaraRules.csproj", "{39892619-A80F-4BE7-BAA1-E23BEAE17725}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{87B9D9A1-12B6-4173-AB26-E8F52D0D09EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87B9D9A1-12B6-4173-AB26-E8F52D0D09EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87B9D9A1-12B6-4173-AB26-E8F52D0D09EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39892619-A80F-4BE7-BAA1-E23BEAE17725}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39892619-A80F-4BE7-BAA1-E23BEAE17725}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39892619-A80F-4BE7-BAA1-E23BEAE17725}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39892619-A80F-4BE7-BAA1-E23BEAE17725}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

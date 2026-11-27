@@ -763,7 +763,11 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   webGLPowerPreference: 2
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Android: CAPYBARA_SPINE_4_0
+    Standalone: CAPYBARA_SPINE_4_0
+    WebGL: CAPYBARA_SPINE_4_0
+    iPhone: CAPYBARA_SPINE_4_0
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}

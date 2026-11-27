@@ -6,8 +6,10 @@ namespace UnityWebSocket.Demo
     {
         public string address = "wss://echo.websocket.events";
         public string sendText = "Hello UnityWebSocket!";
+        [SerializeField] private bool showOnStart = true;
 
         private IWebSocket socket;
+        private bool visible;
 
         private bool logMessage = true;
         private string log = "";
@@ -18,17 +20,39 @@ namespace UnityWebSocket.Demo
         private Color red = new Color(1f, 0.1f, 0.1f);
         private Color wait = new Color(0.7f, 0.3f, 0.3f);
 
+        private void Awake()
+        {
+            visible = showOnStart;
+        }
+
         private void OnGUI()
         {
-            var scale = Screen.width / 800f;
-            GUI.matrix = Matrix4x4.TRS(new Vector3(0, 0, 0), Quaternion.identity, new Vector3(scale, scale, 1));
-            var width = GUILayout.Width(Screen.width / scale - 10);
+            if (!visible) return;
+            // Keep the debug controls readable in portrait without overflowing short Game Views.
+            float scale = Mathf.Min(Screen.width / 520f, Screen.height / 360f);
+            if (scale <= 0f) return;
+
+            Matrix4x4 previousMatrix = GUI.matrix;
+            GUI.matrix = previousMatrix * Matrix4x4.Scale(new Vector3(scale, scale, 1f));
+            try
+            {
+                DrawPanel(Screen.width / scale, Screen.height / scale);
+            }
+            finally
+            {
+                GUI.matrix = previousMatrix;
+            }
+        }
+
+        private void DrawPanel(float panelWidth, float panelHeight)
+        {
+            var width = GUILayout.Width(panelWidth - 10);
 
             WebSocketState state = socket == null ? WebSocketState.Closed : socket.ReadyState;
 
             // draw header
             GUILayout.BeginHorizontal();
-            GUILayout.Label("SDK Version: " + Settings.VERSION, GUILayout.Width(Screen.width / scale - 100));
+            GUILayout.Label("SDK Version: " + Settings.VERSION, GUILayout.Width(panelWidth - 100));
             GUI.color = green;
             GUILayout.Label($"FPS: {fps:F2}", GUILayout.Width(80));
             GUI.color = Color.white;
@@ -129,7 +153,7 @@ namespace UnityWebSocket.Demo
             }
 
             // draw message content
-            scrollPos = GUILayout.BeginScrollView(scrollPos, GUILayout.MaxHeight(Screen.height / scale - 270), width);
+            scrollPos = GUILayout.BeginScrollView(scrollPos, GUILayout.MaxHeight(panelHeight - 270), width);
             GUILayout.Label(log);
             GUILayout.EndScrollView();
         }
@@ -187,6 +211,9 @@ namespace UnityWebSocket.Demo
         private float fps = 0;
         private void Update()
         {
+#if UNITY_EDITOR || DEVELOPMENT_BUILD
+            if (Input.GetKeyDown(KeyCode.F8)) visible = !visible;
+#endif
             frame += 1;
             time += Time.deltaTime;
             if (time >= 0.5f)

@@ -1,0 +1,15 @@
+{
+  "Id": 2,
+  "Version": 1,
+  "ChapterName": "潮汐渡口",
+  "EnemyName": "铜壳巡潮兽",
+  "MapId": 2,
+  "EventId": 2,
+  "PlayerHealth": 27,
+  "PlayerAttack": 5,
+  "SupplyAttackBonus": 3,
+  "EnemyHealth": 36,
+  "EnemyAttack": 6,
+  "RoundLimit": 8,
+  "RewardCoins": 18
+}

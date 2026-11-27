@@ -1,0 +1,12 @@
+{
+  "Id": 1,
+  "Name": "栈道短杖",
+  "Slot": 1,
+  "Price": 8,
+  "Attack": 2,
+  "Health": 0,
+  "AttackPerRank": 1,
+  "HealthPerRank": 0,
+  "UpgradeBaseCost": 6,
+  "MaxRank": 3
+}

@@ -8,11 +8,14 @@ WORKDIR /src
 COPY Share/ Share/
 COPY Server/ Server/
 COPY Config/ Config/
+COPY Unity/Assets/GameScripts/GameProto/AdventureProtocol.cs Unity/Assets/GameScripts/GameProto/
+COPY Unity/Assets/GameScripts/GameLogic/Capybara/Rules/ Unity/Assets/GameScripts/GameLogic/Capybara/Rules/
+COPY Unity/Assets/Resources/GameData.json Unity/Assets/Resources/OfflineJourneyStops.json Unity/Assets/Resources/JourneyEventModels.json Unity/Assets/Resources/
 
 RUN dotnet restore Server/Server.sln \
     && dotnet build Server/Server.sln -c Release --no-restore
 
-FROM mcr.microsoft.com/dotnet/runtime:8.0 AS runtime
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 ENV DOTNET_RUNNING_IN_CONTAINER=true \
     TZ=Asia/Shanghai \
     ET_BIND_ANY=1

@@ -1,0 +1,9 @@
+{
+  "Id": 2,
+  "Name": "灯羽雀",
+  "Kind": 2,
+  "BaseCost": 12,
+  "MaxRank": 1,
+  "AttackPerRank": 1,
+  "HealthPerRank": 2
+}

@@ -1,0 +1,110 @@
+// ResponseType G2C_Adventure
+message C2G_Adventure // ISessionRequest
+{
+    int32 RpcId = 1;
+    AdventureAction Action = 2;
+    int64 ExpectedRevision = 3;
+    int32 ChapterId = 4;
+    int32 EquipmentId = 5;
+    int32 TargetId = 6;
+}
+
+message G2C_Adventure // ISessionResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+    int64 PlayerId = 4;
+    int64 RunId = 5;
+    int64 Revision = 6;
+    AdventurePhase Phase = 7;
+    int64 Coins = 8;
+    int32 ChapterId = 9;
+    int32 ConfigVersion = 10;
+    string ChapterName = 11;
+    string EnemyName = 12;
+    bool Won = 13;
+    int32 RewardCoins = 14;
+    repeated AdventureRound Rounds = 15;
+    int64 LastSettledRunId = 16;
+    bool LastSettlementWon = 17;
+    int32 LastSettlementCoins = 18;
+    AdventureSceneInfo Scene = 19;
+    repeated AdventureChapterOption Chapters = 20;
+    repeated AdventureEquipmentOption Equipment = 21;
+    repeated AdventureGrowthOption Growth = 22;
+    repeated AdventureChallengeOption Challenges = 23;
+    int32 ChallengeId = 24;
+}
+
+message AdventureRound
+{
+    int32 Number = 1;
+    int32 PlayerDamage = 2;
+    int32 EnemyDamage = 3;
+    int32 PlayerHealth = 4;
+    int32 EnemyHealth = 5;
+    int32 CompanionDamage = 6;
+}
+
+message AdventureSceneInfo
+{
+    string ResourceKey = 1;
+    string TravelText = 2;
+    string EncounterText = 3;
+    string EventTitle = 4;
+    string EventText = 5;
+    string TakeLabel = 6;
+    string SkipLabel = 7;
+    int32 PlayerHealth = 8;
+    int32 EnemyHealth = 9;
+    string CompanionName = 10;
+}
+
+message AdventureChapterOption
+{
+    int32 Id = 1;
+    string Name = 2;
+    string ResourceKey = 3;
+    int32 RewardCoins = 4;
+}
+
+message AdventureEquipmentOption
+{
+    int32 Id = 1;
+    string Name = 2;
+    AdventureEquipmentSlot Slot = 3;
+    int32 Rank = 4;
+    int32 MaxRank = 5;
+    bool Equipped = 6;
+    int32 Attack = 7;
+    int32 Health = 8;
+    int32 Price = 9;
+    int64 UpgradeCost = 10;
+    int32 NextAttack = 11;
+    int32 NextHealth = 12;
+}
+
+message AdventureGrowthOption
+{
+    int32 Id = 1;
+    string Name = 2;
+    AdventureGrowthKind Kind = 3;
+    int32 Rank = 4;
+    int32 MaxRank = 5;
+    int64 Cost = 6;
+    int32 AttackPerRank = 7;
+    int32 HealthPerRank = 8;
+    bool Assigned = 9;
+}
+
+message AdventureChallengeOption
+{
+    int32 Id = 1;
+    string Name = 2;
+    string ResourceKey = 3;
+    int32 RewardCoins = 4;
+    int32 AttemptsLeft = 5;
+    int32 DailyAttempts = 6;
+    bool Unlocked = 7;
+}

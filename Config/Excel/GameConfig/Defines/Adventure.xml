@@ -1,0 +1,72 @@
+<module name="">
+    <bean name="AdventureChapterConfig" group="s">
+        <var name="Id" type="int"/>
+        <var name="Version" type="int"/>
+        <var name="ChapterName" type="string"/>
+        <var name="EnemyName" type="string"/>
+        <var name="MapId" type="int"/>
+        <var name="EventId" type="int"/>
+        <var name="PlayerHealth" type="int"/>
+        <var name="PlayerAttack" type="int"/>
+        <var name="SupplyAttackBonus" type="int"/>
+        <var name="EnemyHealth" type="int"/>
+        <var name="EnemyAttack" type="int"/>
+        <var name="RoundLimit" type="int"/>
+        <var name="RewardCoins" type="int"/>
+    </bean>
+    <table name="AdventureChapterConfigCategory" value="AdventureChapterConfig" input="AdventureChapters.json,Adventure/HarborChapter.json" index="Id"
+           group="s" output="AdventureChapterConfigCategory"/>
+    <bean name="AdventureMapConfig" group="s">
+        <var name="Id" type="int"/>
+        <var name="ResourceKey" type="string"/>
+        <var name="TravelText" type="string"/>
+        <var name="EncounterText" type="string"/>
+    </bean>
+    <table name="AdventureMapConfigCategory" value="AdventureMapConfig" input="Adventure/CliffMap.json,Adventure/HarborMap.json"
+           index="Id" group="s" output="AdventureMapConfigCategory"/>
+    <bean name="AdventureEventConfig" group="s">
+        <var name="Id" type="int"/>
+        <var name="Title" type="string"/>
+        <var name="Description" type="string"/>
+        <var name="TakeLabel" type="string"/>
+        <var name="SkipLabel" type="string"/>
+    </bean>
+    <table name="AdventureEventConfigCategory" value="AdventureEventConfig" input="Adventure/CliffEvent.json,Adventure/HarborEvent.json"
+           index="Id" group="s" output="AdventureEventConfigCategory"/>
+    <bean name="AdventureEquipmentConfig" group="s">
+        <var name="Id" type="int"/>
+        <var name="Name" type="string"/>
+        <var name="Slot" type="int"/>
+        <var name="Price" type="int"/>
+        <var name="Attack" type="int"/>
+        <var name="Health" type="int"/>
+        <var name="AttackPerRank" type="int"/>
+        <var name="HealthPerRank" type="int"/>
+        <var name="UpgradeBaseCost" type="int"/>
+        <var name="MaxRank" type="int"/>
+    </bean>
+    <table name="AdventureEquipmentConfigCategory" value="AdventureEquipmentConfig"
+           input="Adventure/TrailStaff.json,Adventure/HarborVest.json" index="Id" group="s" output="AdventureEquipmentConfigCategory"/>
+    <bean name="AdventureGrowthConfig" group="s">
+        <var name="Id" type="int"/>
+        <var name="Name" type="string"/>
+        <var name="Kind" type="int"/>
+        <var name="BaseCost" type="int"/>
+        <var name="MaxRank" type="int"/>
+        <var name="AttackPerRank" type="int"/>
+        <var name="HealthPerRank" type="int"/>
+    </bean>
+    <table name="AdventureGrowthConfigCategory" value="AdventureGrowthConfig"
+           input="Adventure/EnduranceTalent.json,Adventure/LanternBird.json" index="Id" group="s" output="AdventureGrowthConfigCategory"/>
+    <bean name="AdventureChallengeConfig" group="s">
+        <var name="Id" type="int"/>
+        <var name="Name" type="string"/>
+        <var name="ChapterId" type="int"/>
+        <var name="DailyAttempts" type="int"/>
+        <var name="EnemyHealthBonus" type="int"/>
+        <var name="EnemyAttackBonus" type="int"/>
+        <var name="RewardCoins" type="int"/>
+    </bean>
+    <table name="AdventureChallengeConfigCategory" value="AdventureChallengeConfig"
+           input="Adventure/HarborTrial.json" index="Id" group="s" output="AdventureChallengeConfigCategory"/>
+</module>

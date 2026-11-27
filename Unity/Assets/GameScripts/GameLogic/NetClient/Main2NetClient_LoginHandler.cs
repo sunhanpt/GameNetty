@@ -1,11 +1,22 @@
 ﻿using System.Net;
 using ET;
+using UnityEngine;
 
 namespace GameScripts.GameLogic
 {
     [MessageHandler(SceneType.NetClient)]
     public class Main2NetClient_LoginHandler : MessageHandler<Scene, Main2NetClient_Login, NetClient2Main_Login>
     {
+#if UNITY_EDITOR
+        private static string LocalServerPreferenceKey => $"GameNetty.UseLocalServer:{UnityEngine.Application.dataPath}";
+
+        public static bool UseLocalServer
+        {
+            get => UnityEditor.EditorPrefs.GetBool(LocalServerPreferenceKey, false);
+            set => UnityEditor.EditorPrefs.SetBool(LocalServerPreferenceKey, value);
+        }
+#endif
+
         protected override async ETTask Run(Scene root, Main2NetClient_Login request, NetClient2Main_Login response)
         {
             string account = request.Account;
@@ -15,16 +26,18 @@ namespace GameScripts.GameLogic
             root.RemoveComponent<NetComponent>();
             root.RemoveComponent<NetWSComponent>();
 
-            Log.Info($"login http {ConstValue.RouterHttpHost}:{ConstValue.RouterHttpPort}");
+            string routerHost = GetRouterHost();
+            Log.Info($"login http {routerHost}:{ConstValue.RouterHttpPort}");
             RouterAddressComponent routerAddressComponent =
-                    root.AddComponent<RouterAddressComponent, string, int>(ConstValue.RouterHttpHost, ConstValue.RouterHttpPort);
+                    root.AddComponent<RouterAddressComponent, string, int>(routerHost, ConstValue.RouterHttpPort);
             await routerAddressComponent.Init();
 
             root.GetComponent<FiberParentComponent>().ParentFiberId = request.OwnerFiberId;
             NetWSComponent netWs = root.AddComponent<NetWSComponent>();
 
             IPEndPoint innerRealm = routerAddressComponent.GetRealmAddress(account);
-            IPEndPoint realmAddress = ToPublicEndPoint(innerRealm);
+            IPAddress routerIp = routerAddressComponent.RouterManagerIPAddress;
+            IPEndPoint realmAddress = new IPEndPoint(routerIp, innerRealm.Port);
             Log.Info($"login websocket realm {realmAddress} info={JsonHelper.ToJson(routerAddressComponent.Info)}");
 
             R2C_Login r2CLogin;
@@ -38,7 +51,7 @@ namespace GameScripts.GameLogic
             }
 
             IPEndPoint innerGate = NetworkHelper.ToIPEndPoint(r2CLogin.Address);
-            IPEndPoint gateAddress = ToPublicEndPoint(innerGate);
+            IPEndPoint gateAddress = new IPEndPoint(routerIp, innerGate.Port);
             Log.Info($"login websocket gate {gateAddress} (server returned {r2CLogin.Address})");
 
             Session gateSession = netWs.Create(gateAddress);
@@ -50,19 +63,28 @@ namespace GameScripts.GameLogic
             c2GLoginGate.GateId = r2CLogin.GateId;
             G2C_LoginGate g2CLoginGate = (G2C_LoginGate)await gateSession.Call(c2GLoginGate, 15000);
 
+            if (g2CLoginGate.Error != 0 || g2CLoginGate.PlayerId == 0)
+            {
+                throw new RpcException(g2CLoginGate.Error != 0 ? g2CLoginGate.Error : ErrorCore.ERR_RpcFail, g2CLoginGate.Message);
+            }
+
+            gateSession.AddComponent<PingComponent>();
             response.PlayerId = g2CLoginGate.PlayerId;
             Log.Info("登陆gate成功!");
             await ETTask.CompletedTask;
         }
 
-        private static IPEndPoint ToPublicEndPoint(IPEndPoint inner)
+        private static string GetRouterHost()
         {
-            if (!IPAddress.TryParse(ConstValue.RouterHttpHost, out IPAddress publicIp))
+#if UNITY_EDITOR
+            if (UseLocalServer)
             {
-                publicIp = NetworkHelper.GetHostAddress(ConstValue.RouterHttpHost);
+                return IPAddress.Loopback.ToString();
             }
-
-            return new IPEndPoint(publicIp, inner.Port);
+#endif
+            // NetClient runs on the Unity main scheduler, where Resources can be accessed.
+            string configuredHost = Resources.Load<TextAsset>("GameNettyRouterHost")?.text.Trim();
+            return string.IsNullOrEmpty(configuredHost) ? IPAddress.Loopback.ToString() : configuredHost;
         }
 
         private static async ETTask WaitWebsocketAsync(Scene root)

@@ -1,10 +1,28 @@
 ﻿using UnityEditor;
 using UnityEngine;
+using GameScripts.GameLogic;
 
 namespace ET
 {
     public static class ToolsEditor
     {
+        private const string LocalServerMenu = "ET/连接本地服务器 (127.0.0.1)";
+
+        [MenuItem(LocalServerMenu)]
+        private static void ToggleLocalServer()
+        {
+            bool useLocalServer = !Main2NetClient_LoginHandler.UseLocalServer;
+            Main2NetClient_LoginHandler.UseLocalServer = useLocalServer;
+            Menu.SetChecked(LocalServerMenu, useLocalServer);
+        }
+
+        [MenuItem(LocalServerMenu, true)]
+        private static bool ValidateLocalServerMenu()
+        {
+            Menu.SetChecked(LocalServerMenu, Main2NetClient_LoginHandler.UseLocalServer);
+            return true;
+        }
+
         [MenuItem("ET/Luban 转表 Client")]
         public static void BuildLubanExcelClient()
         { 

@@ -1,0 +1,9 @@
+{
+  "Id": 1,
+  "Name": "耐力训练",
+  "Kind": 1,
+  "BaseCost": 8,
+  "MaxRank": 3,
+  "AttackPerRank": 0,
+  "HealthPerRank": 2
+}

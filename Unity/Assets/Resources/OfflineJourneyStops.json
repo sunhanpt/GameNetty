@@ -1,0 +1,6 @@
+{
+  "minimumChapterDays": 20,
+  "firstDay": 10,
+  "lastDayPercent": 76,
+  "fishingMaps": [1001, 1002, 1003, 1004]
+}

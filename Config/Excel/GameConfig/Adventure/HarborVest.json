@@ -1,0 +1,12 @@
+{
+  "Id": 2,
+  "Name": "渡口护衣",
+  "Slot": 2,
+  "Price": 10,
+  "Attack": 0,
+  "Health": 4,
+  "AttackPerRank": 0,
+  "HealthPerRank": 2,
+  "UpgradeBaseCost": 8,
+  "MaxRank": 3
+}

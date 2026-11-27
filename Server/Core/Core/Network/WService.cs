@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.WebSockets;
+using Microsoft.AspNetCore.Http;
 
 namespace ET
 {
@@ -11,19 +12,23 @@ namespace ET
         private long idGenerater = 200000000;
         
         private HttpListener httpListener;
+        private readonly LocalHttpHost localHost;
         
         private readonly Dictionary<long, WChannel> channels = new Dictionary<long, WChannel>();
 
         public ThreadSynchronizationContext ThreadSynchronizationContext;
 
-        public WService(IEnumerable<string> prefixs)
+        public WService(IEnumerable<string> prefixs) : this()
         {
-            this.ServiceType = ServiceType.Outer;
-            this.ThreadSynchronizationContext = new ThreadSynchronizationContext();
-            
-            this.httpListener = new HttpListener();
+            string[] prefixes = prefixs.ToArray();
+            if (prefixes.Length == 1 && LocalHttpHost.TryGetPort(prefixes[0], out int port))
+            {
+                this.localHost = new LocalHttpHost(port, true, this.AcceptLocal);
+                return;
+            }
 
-            StartAccept(prefixs).Coroutine();
+            this.httpListener = new HttpListener();
+            StartAccept(prefixes).Coroutine();
         }
         
         public WService()
@@ -88,11 +93,64 @@ namespace ET
 
         public override void Dispose()
         {
+            if (this.IsDisposed()) return;
             base.Dispose();
-            
+
             this.ThreadSynchronizationContext = null;
+            foreach (WChannel channel in this.channels.Values)
+            {
+                channel.Dispose();
+            }
+            this.channels.Clear();
+            this.localHost?.Dispose();
             this.httpListener?.Close();
             this.httpListener = null;
+        }
+
+        private async Task AcceptLocal(HttpContext context, CancellationToken stopping)
+        {
+            if (!context.WebSockets.IsWebSocketRequest)
+            {
+                context.Response.StatusCode = StatusCodes.Status400BadRequest;
+                return;
+            }
+
+            ThreadSynchronizationContext dispatcher = this.ThreadSynchronizationContext;
+            if (dispatcher == null) return;
+            using CancellationTokenSource abort = CancellationTokenSource.CreateLinkedTokenSource(stopping, context.RequestAborted);
+            CancellationToken cancelled = abort.Token;
+            using WebSocket socket = await context.WebSockets.AcceptWebSocketAsync();
+            IPEndPoint peer = new(context.Connection.RemoteIpAddress, context.Connection.RemotePort);
+            TaskCompletionSource finished = new(TaskCreationOptions.RunContinuationsAsynchronously);
+            dispatcher.Post(() =>
+            {
+                if (cancelled.IsCancellationRequested || this.IsDisposed())
+                {
+                    finished.TrySetResult();
+                    return;
+                }
+
+                long id = this.GetId;
+                WChannel channel = new(id, socket, this, () => finished.TrySetResult()) { RemoteAddress = peer };
+                this.channels.Add(id, channel);
+                try
+                {
+                    this.AcceptCallback(id, peer);
+                }
+                catch
+                {
+                    this.Remove(id);
+                    throw;
+                }
+            });
+
+            try
+            {
+                await finished.Task.WaitAsync(cancelled);
+            }
+            catch (OperationCanceledException) when (cancelled.IsCancellationRequested)
+            {
+            }
         }
 
         private async ETTask StartAccept(IEnumerable<string> prefixs)
@@ -106,7 +164,7 @@ namespace ET
                 
                 httpListener.Start();
 
-                while (true)
+                while (!this.IsDisposed())
                 {
                     try
                     {
@@ -120,20 +178,18 @@ namespace ET
 
                         this.AcceptCallback(channel.Id, channel.RemoteAddress);
                     }
-                    catch (Exception e)
+                    catch (Exception e) when (!this.IsDisposed())
                     {
                         Log.Error(e);
                     }
                 }
             }
-            catch (HttpListenerException e)
+            catch (HttpListenerException e) when (OperatingSystem.IsWindows() && e.NativeErrorCode == 5)
             {
-                if (e.ErrorCode == 5)
-                {
-                    throw new Exception($"CMD管理员中输入: netsh http add urlacl url=http://*:8080/ user=Everyone   {prefixs.ToList().ListToString()}", e);
-                }
-
-                Log.Error(e);
+                throw new InvalidOperationException($"Windows HTTP.sys 拒绝监听 {string.Join(", ", prefixs)}。请为运行服务端的账号配置对应的 URL ACL。", e);
+            }
+            catch (Exception) when (this.IsDisposed())
+            {
             }
             catch (Exception e)
             {

@@ -16,7 +16,7 @@ namespace ET.Server
             root.AddComponent<MessageSender>();
             StartSceneConfig startSceneConfig = StartSceneConfigCategory.Instance.Get(root.Fiber.Id);
             root.AddComponent<NetComponent, IPEndPoint, NetworkProtocol>(NetworkHelper.ListenEndPoint(startSceneConfig.Port, startSceneConfig.InnerIPPort), NetworkProtocol.UDP);
-            root.AddComponent<NetWSComponent, IEnumerable<string>>(new[] { NetworkHelper.WebSocketPrefix(startSceneConfig.Port) });
+            root.AddComponent<NetWSComponent, IEnumerable<string>>(new[] { NetworkHelper.HttpListenerPrefix(startSceneConfig.Port) });
             await ETTask.CompletedTask;
         }
     }

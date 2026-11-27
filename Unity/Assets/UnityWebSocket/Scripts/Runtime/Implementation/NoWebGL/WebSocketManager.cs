@@ -1,5 +1,6 @@
 ﻿#if !NET_LEGACY && (UNITY_EDITOR || !UNITY_WEBGL)
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 namespace UnityWebSocket
@@ -54,15 +55,21 @@ namespace UnityWebSocket
             }
         }
 
-#if UNITY_EDITOR
         private void OnApplicationQuit()
         {
-            for (int i = sockets.Count - 1; i >= 0; i--)
+            Task[] closes = new Task[sockets.Count];
+            for (int i = 0; i < sockets.Count; ++i)
             {
-                sockets[i].Abort();
+                closes[i] = sockets[i].CloseForShutdown();
+            }
+
+            // Close events are produced by the socket workers without a Unity frame.
+            Task.WhenAll(closes).Wait(500);
+            for (int i = 0; i < closes.Length; ++i)
+            {
+                if (!closes[i].IsCompleted) sockets[i].Abort();
             }
         }
-#endif
     }
 }
 #endif

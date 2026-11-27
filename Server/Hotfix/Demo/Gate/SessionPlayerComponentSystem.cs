@@ -11,8 +11,21 @@
             {
                 return;
             }
-            // 发送断线消息
-            root.GetComponent<MessageLocationSenderComponent>().Get(LocationType.Unit).Send(self.Player.Id, G2M_SessionDisconnect.Create());
+            Player player = self.Player;
+            PlayerSessionComponent playerSession = player?.GetComponent<PlayerSessionComponent>();
+            Session current = playerSession?.Session;
+            if (playerSession == null || (current != null && current != self.Parent))
+            {
+                return;
+            }
+
+            playerSession.Session = null;
+            if (player.GetComponent<GateMapComponent>() == null)
+            {
+                return;
+            }
+
+            root.GetComponent<MessageLocationSenderComponent>().Get(LocationType.Unit).Send(player.Id, G2M_SessionDisconnect.Create());
         }
         
         [EntitySystem]

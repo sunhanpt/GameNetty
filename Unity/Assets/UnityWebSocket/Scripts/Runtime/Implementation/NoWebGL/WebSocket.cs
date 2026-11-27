@@ -46,7 +46,8 @@ namespace UnityWebSocket
         private bool isOpening => socket != null && socket.State == System.Net.WebSockets.WebSocketState.Open;
         private ConcurrentQueue<SendBuffer> sendQueue = new ConcurrentQueue<SendBuffer>();
         private ConcurrentQueue<EventArgs> eventQueue = new ConcurrentQueue<EventArgs>();
-        private bool closeProcessing;
+        private volatile bool closeProcessing;
+        private TaskCompletionSource<bool> closeCompleted;
         private CancellationTokenSource cts = null;
 
         #region APIs 
@@ -79,6 +80,7 @@ namespace UnityWebSocket
 
             socket = new ClientWebSocket();
             cts = new CancellationTokenSource();
+            closeCompleted = new TaskCompletionSource<bool>(TaskCreationOptions.RunContinuationsAsynchronously);
 
             // support sub protocols
             if (this.SubProtocols != null)
@@ -284,6 +286,7 @@ namespace UnityWebSocket
         {
             Log($"OnClose, code: {code}, reason: {reason}");
             eventQueue.Enqueue(new CloseEventArgs(code, reason));
+            closeCompleted.TrySetResult(true);
         }
 
         private void HandleError(Exception exception)
@@ -314,6 +317,21 @@ namespace UnityWebSocket
                 {
                     OnError?.Invoke(this, e as ErrorEventArgs);
                 }
+            }
+        }
+
+        internal Task CloseForShutdown()
+        {
+            switch (ReadyState)
+            {
+                case WebSocketState.Open:
+                    CloseAsync();
+                    return closeCompleted.Task;
+                case WebSocketState.Closing:
+                    return closeCompleted.Task;
+                default:
+                    Abort();
+                    return Task.CompletedTask;
             }
         }
 

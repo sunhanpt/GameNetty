@@ -1,0 +1,25 @@
+// ResponseType G2C_CapybaraAdventure
+message C2G_CapybaraAdventure // ISessionRequest
+{
+    int32 RpcId = 1;
+    string CatalogVersion = 2;
+    string CommandId = 3;
+    int64 ExpectedRevision = 4;
+    int32 Action = 5;
+    int32 Id = 6;
+    int32 Option = 7;
+    int32 Currency = 8;
+    int32 Cost = 9;
+    int32 Draws = 10;
+}
+
+message G2C_CapybaraAdventure // ISessionResponse
+{
+    int32 RpcId = 1;
+    int32 Error = 2;
+    string Message = 3;
+    int64 Revision = 4;
+    int64 GameDayTicks = 5;
+    string StateJson = 6;
+    string ResultJson = 7;
+}

@@ -1,0 +1,15 @@
+{
+  "Id": 1,
+  "Version": 2,
+  "ChapterName": "风铃栈道",
+  "EnemyName": "巡路风团",
+  "MapId": 1,
+  "EventId": 1,
+  "PlayerHealth": 22,
+  "PlayerAttack": 4,
+  "SupplyAttackBonus": 2,
+  "EnemyHealth": 25,
+  "EnemyAttack": 5,
+  "RoundLimit": 8,
+  "RewardCoins": 12
+}

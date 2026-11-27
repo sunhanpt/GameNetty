@@ -14,7 +14,7 @@ namespace ET.Server
         private static void Awake(this RouterComponent self, IPEndPoint outerAddress, string innerIP)
         {
             self.OuterUdp = new UdpTransport(outerAddress);
-            self.OuterTcp = new WebsocketTransport(new[] { NetworkHelper.WebSocketPrefix(outerAddress.Port) });
+            self.OuterTcp = new WebsocketTransport(new[] { NetworkHelper.HttpListenerPrefix(outerAddress.Port) });
             self.InnerSocket = new UdpTransport(new IPEndPoint(IPAddress.Parse(innerIP), 0));
         }
         

@@ -1,0 +1,5102 @@
+{
+  "columns": 14,
+  "rows": 11,
+  "bindings": [
+    {
+      "resourceId": 201001,
+      "modelId": 10103
+    },
+    {
+      "resourceId": 201101,
+      "modelId": 10101
+    },
+    {
+      "resourceId": 201102,
+      "modelId": 10102
+    },
+    {
+      "resourceId": 201103,
+      "modelId": 10114
+    },
+    {
+      "resourceId": 201104,
+      "modelId": 10104
+    },
+    {
+      "resourceId": 201105,
+      "modelId": 10105
+    },
+    {
+      "resourceId": 201106,
+      "modelId": 0
+    },
+    {
+      "resourceId": 201107,
+      "modelId": 10106
+    },
+    {
+      "resourceId": 201190,
+      "modelId": 0
+    },
+    {
+      "resourceId": 201201,
+      "modelId": 10107
+    },
+    {
+      "resourceId": 201202,
+      "modelId": 10108
+    },
+    {
+      "resourceId": 201203,
+      "modelId": 10109
+    },
+    {
+      "resourceId": 201204,
+      "modelId": 0
+    },
+    {
+      "resourceId": 201205,
+      "modelId": 10110
+    },
+    {
+      "resourceId": 201206,
+      "modelId": 0
+    },
+    {
+      "resourceId": 201207,
+      "modelId": 10111
+    },
+    {
+      "resourceId": 201290,
+      "modelId": 0
+    },
+    {
+      "resourceId": 201301,
+      "modelId": 10112
+    },
+    {
+      "resourceId": 201302,
+      "modelId": 10113
+    },
+    {
+      "resourceId": 201303,
+      "modelId": -3001
+    },
+    {
+      "resourceId": 201304,
+      "modelId": 0
+    },
+    {
+      "resourceId": 201305,
+      "modelId": 10119
+    },
+    {
+      "resourceId": 201306,
+      "modelId": 10120
+    },
+    {
+      "resourceId": 201307,
+      "modelId": 10121
+    },
+    {
+      "resourceId": 201390,
+      "modelId": 0
+    },
+    {
+      "resourceId": 202001,
+      "modelId": 10203
+    },
+    {
+      "resourceId": 202101,
+      "modelId": 10201
+    },
+    {
+      "resourceId": 202102,
+      "modelId": 10202
+    },
+    {
+      "resourceId": 202103,
+      "modelId": 10216
+    },
+    {
+      "resourceId": 202104,
+      "modelId": 10204
+    },
+    {
+      "resourceId": 202105,
+      "modelId": 10205
+    },
+    {
+      "resourceId": 202106,
+      "modelId": 0
+    },
+    {
+      "resourceId": 202107,
+      "modelId": 10206
+    },
+    {
+      "resourceId": 202190,
+      "modelId": 0
+    },
+    {
+      "resourceId": 202201,
+      "modelId": 10207
+    },
+    {
+      "resourceId": 202202,
+      "modelId": 10208
+    },
+    {
+      "resourceId": 202203,
+      "modelId": 10209
+    },
+    {
+      "resourceId": 202204,
+      "modelId": 0
+    },
+    {
+      "resourceId": 202205,
+      "modelId": 10210
+    },
+    {
+      "resourceId": 202206,
+      "modelId": 0
+    },
+    {
+      "resourceId": 202207,
+      "modelId": 10211
+    },
+    {
+      "resourceId": 202208,
+      "modelId": 10212
+    },
+    {
+      "resourceId": 202290,
+      "modelId": 0
+    },
+    {
+      "resourceId": 202301,
+      "modelId": 10213
+    },
+    {
+      "resourceId": 202302,
+      "modelId": 10214
+    },
+    {
+      "resourceId": 202303,
+      "modelId": -3002
+    },
+    {
+      "resourceId": 202304,
+      "modelId": 0
+    },
+    {
+      "resourceId": 202305,
+      "modelId": 10215
+    },
+    {
+      "resourceId": 202306,
+      "modelId": 10221
+    },
+    {
+      "resourceId": 202307,
+      "modelId": 10222
+    },
+    {
+      "resourceId": 202390,
+      "modelId": 0
+    },
+    {
+      "resourceId": 202506,
+      "modelId": 0
+    },
+    {
+      "resourceId": 202507,
+      "modelId": 11023
+    },
+    {
+      "resourceId": 203001,
+      "modelId": 19103
+    },
+    {
+      "resourceId": 203101,
+      "modelId": 19101
+    },
+    {
+      "resourceId": 203102,
+      "modelId": 19102
+    },
+    {
+      "resourceId": 203103,
+      "modelId": 19116
+    },
+    {
+      "resourceId": 203104,
+      "modelId": 19104
+    },
+    {
+      "resourceId": 203105,
+      "modelId": 19105
+    },
+    {
+      "resourceId": 203106,
+      "modelId": 0
+    },
+    {
+      "resourceId": 203107,
+      "modelId": 19106
+    },
+    {
+      "resourceId": 203190,
+      "modelId": 0
+    },
+    {
+      "resourceId": 203201,
+      "modelId": 19107
+    },
+    {
+      "resourceId": 203202,
+      "modelId": 19108
+    },
+    {
+      "resourceId": 203203,
+      "modelId": 19109
+    },
+    {
+      "resourceId": 203204,
+      "modelId": 0
+    },
+    {
+      "resourceId": 203205,
+      "modelId": 19110
+    },
+    {
+      "resourceId": 203206,
+      "modelId": 0
+    },
+    {
+      "resourceId": 203207,
+      "modelId": 19111
+    },
+    {
+      "resourceId": 203208,
+      "modelId": 19112
+    },
+    {
+      "resourceId": 203290,
+      "modelId": 0
+    },
+    {
+      "resourceId": 203301,
+      "modelId": 19113
+    },
+    {
+      "resourceId": 203302,
+      "modelId": 19114
+    },
+    {
+      "resourceId": 203303,
+      "modelId": -3002
+    },
+    {
+      "resourceId": 203304,
+      "modelId": 0
+    },
+    {
+      "resourceId": 203305,
+      "modelId": 19115
+    },
+    {
+      "resourceId": 203306,
+      "modelId": 19121
+    },
+    {
+      "resourceId": 203307,
+      "modelId": 19122
+    },
+    {
+      "resourceId": 203390,
+      "modelId": 0
+    },
+    {
+      "resourceId": 203509,
+      "modelId": 19123
+    },
+    {
+      "resourceId": 203511,
+      "modelId": 19125
+    },
+    {
+      "resourceId": 204001,
+      "modelId": 10403
+    },
+    {
+      "resourceId": 204101,
+      "modelId": 10401
+    },
+    {
+      "resourceId": 204102,
+      "modelId": 10402
+    },
+    {
+      "resourceId": 204103,
+      "modelId": 10403
+    },
+    {
+      "resourceId": 204104,
+      "modelId": 10404
+    },
+    {
+      "resourceId": 204105,
+      "modelId": 10405
+    },
+    {
+      "resourceId": 204106,
+      "modelId": 0
+    },
+    {
+      "resourceId": 204107,
+      "modelId": 10406
+    },
+    {
+      "resourceId": 204190,
+      "modelId": 0
+    },
+    {
+      "resourceId": 204201,
+      "modelId": 10407
+    },
+    {
+      "resourceId": 204202,
+      "modelId": 10408
+    },
+    {
+      "resourceId": 204203,
+      "modelId": 10409
+    },
+    {
+      "resourceId": 204204,
+      "modelId": 0
+    },
+    {
+      "resourceId": 204205,
+      "modelId": 10410
+    },
+    {
+      "resourceId": 204206,
+      "modelId": 0
+    },
+    {
+      "resourceId": 204207,
+      "modelId": 10411
+    },
+    {
+      "resourceId": 204208,
+      "modelId": 10412
+    },
+    {
+      "resourceId": 204290,
+      "modelId": 0
+    },
+    {
+      "resourceId": 204301,
+      "modelId": 10413
+    },
+    {
+      "resourceId": 204302,
+      "modelId": 10414
+    },
+    {
+      "resourceId": 204303,
+      "modelId": -3002
+    },
+    {
+      "resourceId": 204304,
+      "modelId": 0
+    },
+    {
+      "resourceId": 204305,
+      "modelId": 10415
+    },
+    {
+      "resourceId": 204306,
+      "modelId": 10421
+    },
+    {
+      "resourceId": 204307,
+      "modelId": 10422
+    },
+    {
+      "resourceId": 204390,
+      "modelId": 0
+    },
+    {
+      "resourceId": 205001,
+      "modelId": 19103
+    },
+    {
+      "resourceId": 205101,
+      "modelId": 19101
+    },
+    {
+      "resourceId": 205102,
+      "modelId": 19102
+    },
+    {
+      "resourceId": 205103,
+      "modelId": 19116
+    },
+    {
+      "resourceId": 205104,
+      "modelId": 19104
+    },
+    {
+      "resourceId": 205105,
+      "modelId": 19105
+    },
+    {
+      "resourceId": 205106,
+      "modelId": 0
+    },
+    {
+      "resourceId": 205107,
+      "modelId": 19106
+    },
+    {
+      "resourceId": 205190,
+      "modelId": 0
+    },
+    {
+      "resourceId": 205201,
+      "modelId": 19107
+    },
+    {
+      "resourceId": 205202,
+      "modelId": 19108
+    },
+    {
+      "resourceId": 205203,
+      "modelId": 19109
+    },
+    {
+      "resourceId": 205204,
+      "modelId": 0
+    },
+    {
+      "resourceId": 205205,
+      "modelId": 19110
+    },
+    {
+      "resourceId": 205206,
+      "modelId": 0
+    },
+    {
+      "resourceId": 205207,
+      "modelId": 19111
+    },
+    {
+      "resourceId": 205208,
+      "modelId": 19112
+    },
+    {
+      "resourceId": 205290,
+      "modelId": 0
+    },
+    {
+      "resourceId": 205301,
+      "modelId": 19113
+    },
+    {
+      "resourceId": 205302,
+      "modelId": 19114
+    },
+    {
+      "resourceId": 205303,
+      "modelId": -3002
+    },
+    {
+      "resourceId": 205304,
+      "modelId": 0
+    },
+    {
+      "resourceId": 205305,
+      "modelId": 19115
+    },
+    {
+      "resourceId": 205306,
+      "modelId": 19121
+    },
+    {
+      "resourceId": 205307,
+      "modelId": 19122
+    },
+    {
+      "resourceId": 205390,
+      "modelId": 0
+    },
+    {
+      "resourceId": 206001,
+      "modelId": 19203
+    },
+    {
+      "resourceId": 206101,
+      "modelId": 19201
+    },
+    {
+      "resourceId": 206102,
+      "modelId": 19202
+    },
+    {
+      "resourceId": 206103,
+      "modelId": 19216
+    },
+    {
+      "resourceId": 206104,
+      "modelId": 19204
+    },
+    {
+      "resourceId": 206105,
+      "modelId": 19205
+    },
+    {
+      "resourceId": 206106,
+      "modelId": 0
+    },
+    {
+      "resourceId": 206107,
+      "modelId": 19206
+    },
+    {
+      "resourceId": 206190,
+      "modelId": 0
+    },
+    {
+      "resourceId": 206201,
+      "modelId": 19207
+    },
+    {
+      "resourceId": 206202,
+      "modelId": 19208
+    },
+    {
+      "resourceId": 206203,
+      "modelId": 19209
+    },
+    {
+      "resourceId": 206204,
+      "modelId": 0
+    },
+    {
+      "resourceId": 206205,
+      "modelId": 19210
+    },
+    {
+      "resourceId": 206206,
+      "modelId": 0
+    },
+    {
+      "resourceId": 206207,
+      "modelId": 19211
+    },
+    {
+      "resourceId": 206208,
+      "modelId": 19212
+    },
+    {
+      "resourceId": 206290,
+      "modelId": 0
+    },
+    {
+      "resourceId": 206301,
+      "modelId": 19213
+    },
+    {
+      "resourceId": 206302,
+      "modelId": 19214
+    },
+    {
+      "resourceId": 206303,
+      "modelId": -3002
+    },
+    {
+      "resourceId": 206304,
+      "modelId": 0
+    },
+    {
+      "resourceId": 206305,
+      "modelId": 19215
+    },
+    {
+      "resourceId": 206306,
+      "modelId": 19221
+    },
+    {
+      "resourceId": 206307,
+      "modelId": 19222
+    },
+    {
+      "resourceId": 206390,
+      "modelId": 0
+    },
+    {
+      "resourceId": 206506,
+      "modelId": 0
+    },
+    {
+      "resourceId": 206507,
+      "modelId": 11023
+    },
+    {
+      "resourceId": 207001,
+      "modelId": 10703
+    },
+    {
+      "resourceId": 207101,
+      "modelId": 10701
+    },
+    {
+      "resourceId": 207102,
+      "modelId": 10702
+    },
+    {
+      "resourceId": 207103,
+      "modelId": 10716
+    },
+    {
+      "resourceId": 207104,
+      "modelId": 10704
+    },
+    {
+      "resourceId": 207105,
+      "modelId": 10705
+    },
+    {
+      "resourceId": 207106,
+      "modelId": 0
+    },
+    {
+      "resourceId": 207107,
+      "modelId": 10706
+    },
+    {
+      "resourceId": 207190,
+      "modelId": 0
+    },
+    {
+      "resourceId": 207201,
+      "modelId": 10707
+    },
+    {
+      "resourceId": 207202,
+      "modelId": 10708
+    },
+    {
+      "resourceId": 207203,
+      "modelId": 10709
+    },
+    {
+      "resourceId": 207204,
+      "modelId": 0
+    },
+    {
+      "resourceId": 207205,
+      "modelId": 10710
+    },
+    {
+      "resourceId": 207206,
+      "modelId": 0
+    },
+    {
+      "resourceId": 207207,
+      "modelId": 10711
+    },
+    {
+      "resourceId": 207208,
+      "modelId": 10712
+    },
+    {
+      "resourceId": 207290,
+      "modelId": 0
+    },
+    {
+      "resourceId": 207301,
+      "modelId": 10713
+    },
+    {
+      "resourceId": 207302,
+      "modelId": 10714
+    },
+    {
+      "resourceId": 207303,
+      "modelId": -3002
+    },
+    {
+      "resourceId": 207304,
+      "modelId": 0
+    },
+    {
+      "resourceId": 207305,
+      "modelId": 10715
+    },
+    {
+      "resourceId": 207306,
+      "modelId": 10721
+    },
+    {
+      "resourceId": 207307,
+      "modelId": 10722
+    },
+    {
+      "resourceId": 207390,
+      "modelId": 0
+    },
+    {
+      "resourceId": 207506,
+      "modelId": 0
+    },
+    {
+      "resourceId": 207507,
+      "modelId": 11023
+    },
+    {
+      "resourceId": 208001,
+      "modelId": 19203
+    },
+    {
+      "resourceId": 208101,
+      "modelId": 19201
+    },
+    {
+      "resourceId": 208102,
+      "modelId": 19202
+    },
+    {
+      "resourceId": 208103,
+      "modelId": 19216
+    },
+    {
+      "resourceId": 208104,
+      "modelId": 19204
+    },
+    {
+      "resourceId": 208105,
+      "modelId": 19205
+    },
+    {
+      "resourceId": 208106,
+      "modelId": 0
+    },
+    {
+      "resourceId": 208107,
+      "modelId": 19206
+    },
+    {
+      "resourceId": 208190,
+      "modelId": 0
+    },
+    {
+      "resourceId": 208201,
+      "modelId": 19207
+    },
+    {
+      "resourceId": 208202,
+      "modelId": 19208
+    },
+    {
+      "resourceId": 208203,
+      "modelId": 19209
+    },
+    {
+      "resourceId": 208204,
+      "modelId": 0
+    },
+    {
+      "resourceId": 208205,
+      "modelId": 19210
+    },
+    {
+      "resourceId": 208206,
+      "modelId": 0
+    },
+    {
+      "resourceId": 208207,
+      "modelId": 19211
+    },
+    {
+      "resourceId": 208208,
+      "modelId": 19212
+    },
+    {
+      "resourceId": 208290,
+      "modelId": 0
+    },
+    {
+      "resourceId": 208301,
+      "modelId": 19213
+    },
+    {
+      "resourceId": 208302,
+      "modelId": 19214
+    },
+    {
+      "resourceId": 208303,
+      "modelId": -3002
+    },
+    {
+      "resourceId": 208304,
+      "modelId": 0
+    },
+    {
+      "resourceId": 208305,
+      "modelId": 19215
+    },
+    {
+      "resourceId": 208306,
+      "modelId": 19221
+    },
+    {
+      "resourceId": 208307,
+      "modelId": 19222
+    },
+    {
+      "resourceId": 208390,
+      "modelId": 0
+    },
+    {
+      "resourceId": 208509,
+      "modelId": 19223
+    },
+    {
+      "resourceId": 208511,
+      "modelId": 19225
+    },
+    {
+      "resourceId": 209001,
+      "modelId": 10900
+    },
+    {
+      "resourceId": 209002,
+      "modelId": 10900
+    },
+    {
+      "resourceId": 209003,
+      "modelId": 10900
+    },
+    {
+      "resourceId": 209101,
+      "modelId": 10901
+    },
+    {
+      "resourceId": 209102,
+      "modelId": 10902
+    },
+    {
+      "resourceId": 209103,
+      "modelId": 10903
+    },
+    {
+      "resourceId": 209104,
+      "modelId": 10904
+    },
+    {
+      "resourceId": 209105,
+      "modelId": 10905
+    },
+    {
+      "resourceId": 209106,
+      "modelId": 0
+    },
+    {
+      "resourceId": 209107,
+      "modelId": 10906
+    },
+    {
+      "resourceId": 209190,
+      "modelId": 0
+    },
+    {
+      "resourceId": 209191,
+      "modelId": 0
+    },
+    {
+      "resourceId": 209192,
+      "modelId": 0
+    },
+    {
+      "resourceId": 209201,
+      "modelId": 10907
+    },
+    {
+      "resourceId": 209202,
+      "modelId": 10908
+    },
+    {
+      "resourceId": 209203,
+      "modelId": 10909
+    },
+    {
+      "resourceId": 209204,
+      "modelId": 0
+    },
+    {
+      "resourceId": 209205,
+      "modelId": 10910
+    },
+    {
+      "resourceId": 209206,
+      "modelId": 0
+    },
+    {
+      "resourceId": 209207,
+      "modelId": 10911
+    },
+    {
+      "resourceId": 209208,
+      "modelId": 10912
+    },
+    {
+      "resourceId": 209290,
+      "modelId": 0
+    },
+    {
+      "resourceId": 209291,
+      "modelId": 0
+    },
+    {
+      "resourceId": 209292,
+      "modelId": 0
+    },
+    {
+      "resourceId": 209301,
+      "modelId": 10913
+    },
+    {
+      "resourceId": 209302,
+      "modelId": 10914
+    },
+    {
+      "resourceId": 209303,
+      "modelId": -3002
+    },
+    {
+      "resourceId": 209304,
+      "modelId": 0
+    },
+    {
+      "resourceId": 209305,
+      "modelId": 10915
+    },
+    {
+      "resourceId": 209306,
+      "modelId": 10921
+    },
+    {
+      "resourceId": 209307,
+      "modelId": 10922
+    },
+    {
+      "resourceId": 209390,
+      "modelId": 0
+    },
+    {
+      "resourceId": 209391,
+      "modelId": 0
+    },
+    {
+      "resourceId": 209392,
+      "modelId": 0
+    },
+    {
+      "resourceId": 210001,
+      "modelId": 11000
+    },
+    {
+      "resourceId": 210101,
+      "modelId": 11001
+    },
+    {
+      "resourceId": 210102,
+      "modelId": 11002
+    },
+    {
+      "resourceId": 210103,
+      "modelId": 11003
+    },
+    {
+      "resourceId": 210104,
+      "modelId": 11004
+    },
+    {
+      "resourceId": 210105,
+      "modelId": 11005
+    },
+    {
+      "resourceId": 210106,
+      "modelId": 0
+    },
+    {
+      "resourceId": 210107,
+      "modelId": 11006
+    },
+    {
+      "resourceId": 210190,
+      "modelId": 0
+    },
+    {
+      "resourceId": 210201,
+      "modelId": 11007
+    },
+    {
+      "resourceId": 210202,
+      "modelId": 11008
+    },
+    {
+      "resourceId": 210203,
+      "modelId": 11009
+    },
+    {
+      "resourceId": 210204,
+      "modelId": 0
+    },
+    {
+      "resourceId": 210205,
+      "modelId": 11010
+    },
+    {
+      "resourceId": 210206,
+      "modelId": 0
+    },
+    {
+      "resourceId": 210207,
+      "modelId": 11011
+    },
+    {
+      "resourceId": 210208,
+      "modelId": 11012
+    },
+    {
+      "resourceId": 210290,
+      "modelId": 0
+    },
+    {
+      "resourceId": 210301,
+      "modelId": 11013
+    },
+    {
+      "resourceId": 210302,
+      "modelId": 11014
+    },
+    {
+      "resourceId": 210303,
+      "modelId": -3002
+    },
+    {
+      "resourceId": 210304,
+      "modelId": 0
+    },
+    {
+      "resourceId": 210305,
+      "modelId": 11015
+    },
+    {
+      "resourceId": 210306,
+      "modelId": 11021
+    },
+    {
+      "resourceId": 210307,
+      "modelId": 11022
+    },
+    {
+      "resourceId": 210390,
+      "modelId": 0
+    },
+    {
+      "resourceId": 210506,
+      "modelId": 0
+    },
+    {
+      "resourceId": 210507,
+      "modelId": 11023
+    },
+    {
+      "resourceId": 211001,
+      "modelId": 21103
+    },
+    {
+      "resourceId": 211101,
+      "modelId": 21101
+    },
+    {
+      "resourceId": 211102,
+      "modelId": 21102
+    },
+    {
+      "resourceId": 211103,
+      "modelId": 21104
+    },
+    {
+      "resourceId": 211104,
+      "modelId": 21105
+    },
+    {
+      "resourceId": 211105,
+      "modelId": 21106
+    },
+    {
+      "resourceId": 211106,
+      "modelId": 0
+    },
+    {
+      "resourceId": 211107,
+      "modelId": 21107
+    },
+    {
+      "resourceId": 211190,
+      "modelId": 0
+    },
+    {
+      "resourceId": 211201,
+      "modelId": 21108
+    },
+    {
+      "resourceId": 211202,
+      "modelId": 21110
+    },
+    {
+      "resourceId": 211203,
+      "modelId": 21109
+    },
+    {
+      "resourceId": 211204,
+      "modelId": 0
+    },
+    {
+      "resourceId": 211205,
+      "modelId": 21111
+    },
+    {
+      "resourceId": 211206,
+      "modelId": 0
+    },
+    {
+      "resourceId": 211207,
+      "modelId": 21112
+    },
+    {
+      "resourceId": 211208,
+      "modelId": 21113
+    },
+    {
+      "resourceId": 211290,
+      "modelId": 0
+    },
+    {
+      "resourceId": 211301,
+      "modelId": 21114
+    },
+    {
+      "resourceId": 211302,
+      "modelId": 21115
+    },
+    {
+      "resourceId": 211303,
+      "modelId": -3002
+    },
+    {
+      "resourceId": 211304,
+      "modelId": 0
+    },
+    {
+      "resourceId": 211305,
+      "modelId": 21116
+    },
+    {
+      "resourceId": 211306,
+      "modelId": 21117
+    },
+    {
+      "resourceId": 211307,
+      "modelId": 21118
+    },
+    {
+      "resourceId": 211390,
+      "modelId": 0
+    },
+    {
+      "resourceId": 211509,
+      "modelId": 19223
+    },
+    {
+      "resourceId": 211511,
+      "modelId": 19225
+    },
+    {
+      "resourceId": 212513,
+      "modelId": 11213
+    },
+    {
+      "resourceId": 212514,
+      "modelId": 11213
+    }
+  ],
+  "models": [
+    {
+      "id": 10103,
+      "cell": 0,
+      "art": "TreasureMap",
+      "biome": "Coast",
+      "sourceModelId": 0,
+      "landOffset": 4.400000095367432,
+      "seaOffset": 4.099999904632568,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.1432,
+        "y": -3.4889,
+        "width": 9.0974,
+        "height": 4.99535
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.6597222
+      }
+    },
+    {
+      "id": 10101,
+      "cell": 1,
+      "art": "Shipwreck",
+      "biome": "Coast",
+      "sourceModelId": 0,
+      "landOffset": 2.549999952316284,
+      "seaOffset": 2.25,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.97866,
+        "y": -1.48911,
+        "width": 6.19573,
+        "height": 3.64
+      },
+      "artBounds": {
+        "x": 0.1388889,
+        "y": 0.1180556,
+        "width": 0.7222222,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 10102,
+      "cell": 2,
+      "art": "Witch",
+      "biome": "Coast",
+      "sourceModelId": 0,
+      "landOffset": 4.400000095367432,
+      "seaOffset": 4.099999904632568,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.37518,
+        "y": -2.20661,
+        "width": 3.8881,
+        "height": 1.94023
+      },
+      "artBounds": {
+        "x": 0.1319444,
+        "y": 0.1180556,
+        "width": 0.7291667,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 10114,
+      "cell": 3,
+      "art": "StoneSpirit",
+      "biome": "Coast",
+      "sourceModelId": 0,
+      "landOffset": 4.400000095367432,
+      "seaOffset": 4.099999904632568,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.45954,
+        "y": -2.3619,
+        "width": 3.12514,
+        "height": 2.64534
+      },
+      "artBounds": {
+        "x": 0.1180556,
+        "y": 0.1180556,
+        "width": 0.7638889,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 10104,
+      "cell": 4,
+      "art": "PearlClam",
+      "biome": "Coast",
+      "sourceModelId": 0,
+      "landOffset": 2.25,
+      "seaOffset": 2.25,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.12641,
+        "y": -1.09648,
+        "width": 5.516,
+        "height": 3.43212
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.7569444
+      }
+    },
+    {
+      "id": 10105,
+      "cell": 5,
+      "art": "MagicPot",
+      "biome": "Coast",
+      "sourceModelId": 0,
+      "landOffset": 4.400000095367432,
+      "seaOffset": 4.099999904632568,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -0.31026,
+        "y": -1.93668,
+        "width": 2.02509,
+        "height": 1.88461
+      },
+      "artBounds": {
+        "x": 0.1180556,
+        "y": 0.1180556,
+        "width": 0.7708333,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 10106,
+      "cell": 6,
+      "art": "WizardTower",
+      "biome": "Coast",
+      "sourceModelId": 0,
+      "landOffset": 4.900000095367432,
+      "seaOffset": 4.599999904632568,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.665,
+        "y": -2.59,
+        "width": 5.25,
+        "height": 4.9
+      },
+      "artBounds": {
+        "x": 0.2569444,
+        "y": 0.1111111,
+        "width": 0.4930556,
+        "height": 0.7847222
+      }
+    },
+    {
+      "id": 10107,
+      "cell": 7,
+      "art": "Mole",
+      "biome": "Coast",
+      "sourceModelId": 0,
+      "landOffset": 5,
+      "seaOffset": 4.699999809265137,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.44769,
+        "y": -1.32217,
+        "width": 2.83551,
+        "height": 2.83169
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.6388889
+      }
+    },
+    {
+      "id": 10108,
+      "cell": 8,
+      "art": "Nest",
+      "biome": "Coast",
+      "sourceModelId": 0,
+      "landOffset": 3.1500000953674316,
+      "seaOffset": 2.8499999046325684,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.28013,
+        "y": -0.4908,
+        "width": 2.07,
+        "height": 1.88111
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.6111111
+      }
+    },
+    {
+      "id": 10109,
+      "cell": 9,
+      "art": "Turtle",
+      "biome": "Coast",
+      "sourceModelId": 0,
+      "landOffset": 4.400000095367432,
+      "seaOffset": 4.099999904632568,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -0.80662,
+        "y": -2.19646,
+        "width": 1.37582,
+        "height": 1.85486
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.6527778
+      }
+    },
+    {
+      "id": 10110,
+      "cell": 10,
+      "art": "Slime",
+      "biome": "Coast",
+      "sourceModelId": 0,
+      "landOffset": 4.400000095367432,
+      "seaOffset": 4.099999904632568,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -0.17365,
+        "y": -1.98658,
+        "width": 1.12,
+        "height": 1.02167
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.5972222
+      }
+    },
+    {
+      "id": 10111,
+      "cell": 11,
+      "art": "Mermaid",
+      "biome": "Coast",
+      "sourceModelId": 0,
+      "landOffset": 2.200000047683716,
+      "seaOffset": 1.899999976158142,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.83943,
+        "y": -0.78514,
+        "width": 4.19702,
+        "height": 2.99093
+      },
+      "artBounds": {
+        "x": 0.1319444,
+        "y": 0.1111111,
+        "width": 0.7361111,
+        "height": 0.7847222
+      }
+    },
+    {
+      "id": 10112,
+      "cell": 12,
+      "art": "ArenaGate",
+      "biome": "Coast",
+      "sourceModelId": 0,
+      "landOffset": 4.400000095367432,
+      "seaOffset": 4.099999904632568,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.16599,
+        "y": -1.94607,
+        "width": 4.13868,
+        "height": 1.90005
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1111111,
+        "width": 0.8125,
+        "height": 0.7291667
+      }
+    },
+    {
+      "id": 10113,
+      "cell": 13,
+      "art": "UndeadGate",
+      "biome": "Coast",
+      "sourceModelId": 0,
+      "landOffset": 4.400000095367432,
+      "seaOffset": 4.099999904632568,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.195,
+        "y": -1.815,
+        "width": 4.67,
+        "height": 4.37
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.7222222
+      }
+    },
+    {
+      "id": -3001,
+      "cell": 14,
+      "art": "ArmouredChallenger",
+      "biome": "Town",
+      "sourceModelId": 220402,
+      "landOffset": 3.2,
+      "seaOffset": 3.2,
+      "landOffsetX": 0,
+      "seaOffsetX": 0
+    },
+    {
+      "id": 10119,
+      "cell": 15,
+      "art": "DarkTower",
+      "biome": "Coast",
+      "sourceModelId": 0,
+      "landOffset": 4.400000095367432,
+      "seaOffset": 4.099999904632568,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.1005,
+        "y": -2.133,
+        "width": 5.481,
+        "height": 4.606
+      },
+      "artBounds": {
+        "x": 0.1458333,
+        "y": 0.1180556,
+        "width": 0.7013889,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 10120,
+      "cell": 16,
+      "art": "Obelisk",
+      "biome": "Coast",
+      "sourceModelId": 0,
+      "landOffset": 4.400000095367432,
+      "seaOffset": 4.099999904632568,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.14,
+        "y": -2.115,
+        "width": 5.52,
+        "height": 5.25
+      },
+      "artBounds": {
+        "x": 0.1875,
+        "y": 0.1180556,
+        "width": 0.625,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 10121,
+      "cell": 17,
+      "art": "Beacon",
+      "biome": "Coast",
+      "sourceModelId": 0,
+      "landOffset": 4.400000095367432,
+      "seaOffset": 4.099999904632568,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.2555,
+        "y": -2.2955,
+        "width": 5.411,
+        "height": 4.571
+      },
+      "artBounds": {
+        "x": 0.2152778,
+        "y": 0.1180556,
+        "width": 0.5625,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 10203,
+      "cell": 18,
+      "art": "TreasureMap",
+      "biome": "Snow",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.93719,
+        "y": -1.71634,
+        "width": 2.77195,
+        "height": 1.24999
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.6597222
+      }
+    },
+    {
+      "id": 10201,
+      "cell": 19,
+      "art": "FallenSkeleton",
+      "biome": "Snow",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.624,
+        "y": -2.244,
+        "width": 5.504,
+        "height": 4.56
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.5902778
+      }
+    },
+    {
+      "id": 10202,
+      "cell": 20,
+      "art": "Witch",
+      "biome": "Snow",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.13914,
+        "y": -2.32661,
+        "width": 1.89206,
+        "height": 1.94023
+      },
+      "artBounds": {
+        "x": 0.1319444,
+        "y": 0.1180556,
+        "width": 0.7291667,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 10216,
+      "cell": 21,
+      "art": "StoneSpirit",
+      "biome": "Snow",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.45954,
+        "y": -2.5119,
+        "width": 3.12514,
+        "height": 2.64534
+      },
+      "artBounds": {
+        "x": 0.1180556,
+        "y": 0.1180556,
+        "width": 0.7638889,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 10204,
+      "cell": 22,
+      "art": "SwordMemorial",
+      "biome": "Snow",
+      "sourceModelId": 0,
+      "landOffset": 1.7000000476837158,
+      "seaOffset": 1.7000000476837158,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.64779,
+        "y": -0.44828,
+        "width": 5.4685,
+        "height": 5.39003
+      },
+      "artBounds": {
+        "x": 0.125,
+        "y": 0.1111111,
+        "width": 0.75,
+        "height": 0.7847222
+      }
+    },
+    {
+      "id": 10205,
+      "cell": 23,
+      "art": "EmptyHouse",
+      "biome": "Snow",
+      "sourceModelId": 0,
+      "landOffset": 3.5999999046325684,
+      "seaOffset": 3.0999999046325684,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.044,
+        "y": -2.028,
+        "width": 4.088,
+        "height": 2.968
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.7361111
+      }
+    },
+    {
+      "id": 10206,
+      "cell": 24,
+      "art": "WizardTower",
+      "biome": "Snow",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.98,
+        "y": -2.46,
+        "width": 6,
+        "height": 5.6
+      },
+      "artBounds": {
+        "x": 0.2569444,
+        "y": 0.1111111,
+        "width": 0.4930556,
+        "height": 0.7847222
+      }
+    },
+    {
+      "id": 10207,
+      "cell": 25,
+      "art": "Mole",
+      "biome": "Snow",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.44769,
+        "y": -1.32217,
+        "width": 2.83551,
+        "height": 2.83169
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.6388889
+      }
+    },
+    {
+      "id": 10208,
+      "cell": 26,
+      "art": "TreeNest",
+      "biome": "Snow",
+      "sourceModelId": 0,
+      "landOffset": 1.7000000476837158,
+      "seaOffset": 1.7000000476837158,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.47678,
+        "y": -0.49438,
+        "width": 4.95358,
+        "height": 4.11122
+      },
+      "artBounds": {
+        "x": 0.1111111,
+        "y": 0.1180556,
+        "width": 0.7777778,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 10209,
+      "cell": 27,
+      "art": "GoblinMerchant",
+      "biome": "Snow",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.28595,
+        "y": -2.45607,
+        "width": 1.75208,
+        "height": 1.79226
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 10210,
+      "cell": 28,
+      "art": "Slime",
+      "biome": "Snow",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -0.68365,
+        "y": -2.43657,
+        "width": 1.12,
+        "height": 1.02167
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.5972222
+      }
+    },
+    {
+      "id": 10211,
+      "cell": 29,
+      "art": "Gorgon",
+      "biome": "Snow",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -0.83846,
+        "y": -2.42069,
+        "width": 1.94739,
+        "height": 1.84907
+      },
+      "artBounds": {
+        "x": 0.1875,
+        "y": 0.1111111,
+        "width": 0.6319444,
+        "height": 0.7847222
+      }
+    },
+    {
+      "id": 10212,
+      "cell": 30,
+      "art": "SkullMonument",
+      "biome": "Snow",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.23,
+        "y": -2.336,
+        "width": 7.04,
+        "height": 5.748
+      },
+      "artBounds": {
+        "x": 0.1319444,
+        "y": 0.1180556,
+        "width": 0.7430556,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 10213,
+      "cell": 31,
+      "art": "ArenaGate",
+      "biome": "Snow",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.32696,
+        "y": -2.22988,
+        "width": 4.92703,
+        "height": 1.81803
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1111111,
+        "width": 0.8125,
+        "height": 0.7291667
+      }
+    },
+    {
+      "id": 10214,
+      "cell": 32,
+      "art": "DemonGate",
+      "biome": "Snow",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.93247,
+        "y": -2.389,
+        "width": 3.00377,
+        "height": 2.72399
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.7430556
+      }
+    },
+    {
+      "id": -3002,
+      "cell": 14,
+      "art": "ArmouredChallenger",
+      "biome": "Town",
+      "sourceModelId": 220402,
+      "landOffset": 3.2,
+      "seaOffset": 3.2,
+      "landOffsetX": 0,
+      "seaOffsetX": 0
+    },
+    {
+      "id": 10215,
+      "cell": 33,
+      "art": "DarkTower",
+      "biome": "Snow",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.5235,
+        "y": -2.841,
+        "width": 7.047,
+        "height": 5.922
+      },
+      "artBounds": {
+        "x": 0.1458333,
+        "y": 0.1180556,
+        "width": 0.7013889,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 10221,
+      "cell": 34,
+      "art": "Obelisk",
+      "biome": "Snow",
+      "sourceModelId": 0,
+      "landOffset": 3.7699999809265137,
+      "seaOffset": 2.75,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.094,
+        "y": -1.25,
+        "width": 5.888,
+        "height": 5.6
+      },
+      "artBounds": {
+        "x": 0.1875,
+        "y": 0.1180556,
+        "width": 0.625,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 10222,
+      "cell": 35,
+      "art": "Beacon",
+      "biome": "Snow",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.092,
+        "y": -1.932,
+        "width": 6.184,
+        "height": 5.224
+      },
+      "artBounds": {
+        "x": 0.2152778,
+        "y": 0.1180556,
+        "width": 0.5625,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 11023,
+      "cell": 36,
+      "art": "UndeadMerchant",
+      "biome": "Forest",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.286,
+        "y": -2.45607,
+        "width": 1.75198,
+        "height": 1.79228
+      },
+      "artBounds": {
+        "x": 0.1041667,
+        "y": 0.1180556,
+        "width": 0.7916667,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 19103,
+      "cell": 37,
+      "art": "TreasureMap",
+      "biome": "Meadow",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.45563,
+        "y": -1.75529,
+        "width": 5.2024,
+        "height": 1.14663
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.6597222
+      }
+    },
+    {
+      "id": 19101,
+      "cell": 38,
+      "art": "FallenSkeleton",
+      "biome": "Meadow",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.144,
+        "y": -1.744,
+        "width": 5.504,
+        "height": 4.56
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.5902778
+      }
+    },
+    {
+      "id": 19102,
+      "cell": 39,
+      "art": "Witch",
+      "biome": "Meadow",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -0.18914,
+        "y": -2.32661,
+        "width": 1.89206,
+        "height": 1.94023
+      },
+      "artBounds": {
+        "x": 0.1319444,
+        "y": 0.1180556,
+        "width": 0.7291667,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 19116,
+      "cell": 40,
+      "art": "StoneSpirit",
+      "biome": "Meadow",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.2771,
+        "y": -2.48291,
+        "width": 2.7345,
+        "height": 2.31467
+      },
+      "artBounds": {
+        "x": 0.1180556,
+        "y": 0,
+        "width": 0.7638889,
+        "height": 0.8958333
+      }
+    },
+    {
+      "id": 19104,
+      "cell": 22,
+      "art": "SwordMemorial",
+      "biome": "Snow",
+      "sourceModelId": 0,
+      "landOffset": 1.7000000476837158,
+      "seaOffset": 1.7000000476837158,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.64779,
+        "y": -0.44828,
+        "width": 5.4685,
+        "height": 5.39003
+      },
+      "artBounds": {
+        "x": 0.125,
+        "y": 0.1111111,
+        "width": 0.75,
+        "height": 0.7847222
+      }
+    },
+    {
+      "id": 19105,
+      "cell": 41,
+      "art": "EmptyHouse",
+      "biome": "Meadow",
+      "sourceModelId": 0,
+      "landOffset": 3.5999999046325684,
+      "seaOffset": 3.0999999046325684,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.5,
+        "y": -1.66,
+        "width": 5,
+        "height": 3.912
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.7361111
+      }
+    },
+    {
+      "id": 19106,
+      "cell": 42,
+      "art": "WizardTower",
+      "biome": "Meadow",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3,
+        "y": -2.12,
+        "width": 6,
+        "height": 5.6
+      },
+      "artBounds": {
+        "x": 0.2569444,
+        "y": 0.1111111,
+        "width": 0.4930556,
+        "height": 0.7847222
+      }
+    },
+    {
+      "id": 19107,
+      "cell": 43,
+      "art": "Mole",
+      "biome": "Meadow",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.44769,
+        "y": -1.32217,
+        "width": 2.83551,
+        "height": 2.83169
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.6388889
+      }
+    },
+    {
+      "id": 19108,
+      "cell": 44,
+      "art": "TreeNest",
+      "biome": "Meadow",
+      "sourceModelId": 0,
+      "landOffset": 1.7000000476837158,
+      "seaOffset": 1.7000000476837158,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.47678,
+        "y": -0.47838,
+        "width": 4.95358,
+        "height": 4.11122
+      },
+      "artBounds": {
+        "x": 0.1111111,
+        "y": 0.1180556,
+        "width": 0.7777778,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 19109,
+      "cell": 45,
+      "art": "GoblinMerchant",
+      "biome": "Meadow",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.28595,
+        "y": -2.45607,
+        "width": 1.75208,
+        "height": 1.79226
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 19110,
+      "cell": 46,
+      "art": "Slime",
+      "biome": "Meadow",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -0.68365,
+        "y": -2.43657,
+        "width": 1.12,
+        "height": 1.02167
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.5972222
+      }
+    },
+    {
+      "id": 19111,
+      "cell": 47,
+      "art": "Gorgon",
+      "biome": "Meadow",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -0.90846,
+        "y": -2.42069,
+        "width": 1.94739,
+        "height": 1.84907
+      },
+      "artBounds": {
+        "x": 0.1875,
+        "y": 0.1111111,
+        "width": 0.6319444,
+        "height": 0.7847222
+      }
+    },
+    {
+      "id": 19112,
+      "cell": 48,
+      "art": "SkullMonument",
+      "biome": "Meadow",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.52,
+        "y": -2.176,
+        "width": 7.04,
+        "height": 5.878
+      },
+      "artBounds": {
+        "x": 0.1319444,
+        "y": 0.1180556,
+        "width": 0.7430556,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 19113,
+      "cell": 49,
+      "art": "ArenaGate",
+      "biome": "Meadow",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.32696,
+        "y": -2.22988,
+        "width": 4.92703,
+        "height": 1.81803
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1111111,
+        "width": 0.8125,
+        "height": 0.7291667
+      }
+    },
+    {
+      "id": 19114,
+      "cell": 50,
+      "art": "DemonGate",
+      "biome": "Meadow",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.93247,
+        "y": -2.389,
+        "width": 3.00377,
+        "height": 2.72399
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.7430556
+      }
+    },
+    {
+      "id": 19115,
+      "cell": 51,
+      "art": "DarkTower",
+      "biome": "Meadow",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.132,
+        "y": -2.512,
+        "width": 6.264,
+        "height": 5.264
+      },
+      "artBounds": {
+        "x": 0.1458333,
+        "y": 0.1180556,
+        "width": 0.7013889,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 19121,
+      "cell": 52,
+      "art": "Obelisk",
+      "biome": "Meadow",
+      "sourceModelId": 0,
+      "landOffset": 2.75,
+      "seaOffset": 2.75,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.744,
+        "y": -1.88,
+        "width": 5.888,
+        "height": 5.6
+      },
+      "artBounds": {
+        "x": 0.1875,
+        "y": 0.1180556,
+        "width": 0.625,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 19122,
+      "cell": 53,
+      "art": "Beacon",
+      "biome": "Meadow",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.092,
+        "y": -1.692,
+        "width": 6.184,
+        "height": 5.224
+      },
+      "artBounds": {
+        "x": 0.2152778,
+        "y": 0.1180556,
+        "width": 0.5625,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 19123,
+      "cell": 54,
+      "art": "FloatingTower",
+      "biome": "Sky",
+      "sourceModelId": 0,
+      "landOffset": 4.300000190734863,
+      "seaOffset": 4.300000190734863,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.75416,
+        "y": -2.76205,
+        "width": 3.51632,
+        "height": 7.26289
+      },
+      "artBounds": {
+        "x": 0.2361111,
+        "y": 0.2291667,
+        "width": 0.5277778,
+        "height": 0.7708333
+      }
+    },
+    {
+      "id": 19125,
+      "cell": 55,
+      "art": "Ruins",
+      "biome": "Sky",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.91707,
+        "y": -2.57522,
+        "width": 5.628,
+        "height": 6.41305
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 10403,
+      "cell": 56,
+      "art": "TreasureMap",
+      "biome": "Highland",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.544,
+        "y": -2.468,
+        "width": 4.1392,
+        "height": 3.7808
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.6597222
+      }
+    },
+    {
+      "id": 10401,
+      "cell": 57,
+      "art": "FallenSkeleton",
+      "biome": "Highland",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.144,
+        "y": -1.744,
+        "width": 5.504,
+        "height": 4.56
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.5902778
+      }
+    },
+    {
+      "id": 10402,
+      "cell": 58,
+      "art": "Witch",
+      "biome": "Highland",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.13914,
+        "y": -2.32661,
+        "width": 1.89206,
+        "height": 1.94023
+      },
+      "artBounds": {
+        "x": 0.1319444,
+        "y": 0.1180556,
+        "width": 0.7291667,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 10404,
+      "cell": 22,
+      "art": "SwordMemorial",
+      "biome": "Snow",
+      "sourceModelId": 0,
+      "landOffset": 1.7000000476837158,
+      "seaOffset": 1.7000000476837158,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.64779,
+        "y": -0.44828,
+        "width": 5.4685,
+        "height": 5.39003
+      },
+      "artBounds": {
+        "x": 0.125,
+        "y": 0.1111111,
+        "width": 0.75,
+        "height": 0.7847222
+      }
+    },
+    {
+      "id": 10405,
+      "cell": 59,
+      "art": "EmptyHouse",
+      "biome": "Highland",
+      "sourceModelId": 0,
+      "landOffset": 3.5999999046325684,
+      "seaOffset": 3.0999999046325684,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.5,
+        "y": -1.66,
+        "width": 5,
+        "height": 3.912
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.7361111
+      }
+    },
+    {
+      "id": 10406,
+      "cell": 60,
+      "art": "WizardTower",
+      "biome": "Highland",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3,
+        "y": -2.12,
+        "width": 6,
+        "height": 5.6
+      },
+      "artBounds": {
+        "x": 0.2569444,
+        "y": 0.1111111,
+        "width": 0.4930556,
+        "height": 0.7847222
+      }
+    },
+    {
+      "id": 10407,
+      "cell": 61,
+      "art": "Mole",
+      "biome": "Highland",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.44769,
+        "y": -1.32217,
+        "width": 2.83551,
+        "height": 2.83169
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.6388889
+      }
+    },
+    {
+      "id": 10408,
+      "cell": 62,
+      "art": "TreeNest",
+      "biome": "Highland",
+      "sourceModelId": 0,
+      "landOffset": 1.7000000476837158,
+      "seaOffset": 1.7000000476837158,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.47678,
+        "y": -0.47838,
+        "width": 4.95358,
+        "height": 4.11122
+      },
+      "artBounds": {
+        "x": 0.1111111,
+        "y": 0.1180556,
+        "width": 0.7777778,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 10409,
+      "cell": 63,
+      "art": "GoblinMerchant",
+      "biome": "Highland",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.28595,
+        "y": -2.45607,
+        "width": 1.75208,
+        "height": 1.79226
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 10410,
+      "cell": 64,
+      "art": "Slime",
+      "biome": "Highland",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -0.68365,
+        "y": -2.43657,
+        "width": 1.12,
+        "height": 1.02167
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.5972222
+      }
+    },
+    {
+      "id": 10411,
+      "cell": 65,
+      "art": "Gorgon",
+      "biome": "Highland",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -0.90846,
+        "y": -2.42069,
+        "width": 1.94739,
+        "height": 1.84907
+      },
+      "artBounds": {
+        "x": 0.1875,
+        "y": 0.1111111,
+        "width": 0.6319444,
+        "height": 0.7847222
+      }
+    },
+    {
+      "id": 10412,
+      "cell": 66,
+      "art": "SkullMonument",
+      "biome": "Highland",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.52,
+        "y": -2.176,
+        "width": 7.04,
+        "height": 5.878
+      },
+      "artBounds": {
+        "x": 0.1319444,
+        "y": 0.1180556,
+        "width": 0.7430556,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 10413,
+      "cell": 67,
+      "art": "ArenaGate",
+      "biome": "Highland",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.32696,
+        "y": -2.22988,
+        "width": 4.92703,
+        "height": 1.81803
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1111111,
+        "width": 0.8125,
+        "height": 0.7291667
+      }
+    },
+    {
+      "id": 10414,
+      "cell": 68,
+      "art": "DemonGate",
+      "biome": "Highland",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.93247,
+        "y": -2.389,
+        "width": 3.00377,
+        "height": 2.72399
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.7430556
+      }
+    },
+    {
+      "id": 10415,
+      "cell": 69,
+      "art": "DarkTower",
+      "biome": "Highland",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.132,
+        "y": -2.512,
+        "width": 6.264,
+        "height": 5.264
+      },
+      "artBounds": {
+        "x": 0.1458333,
+        "y": 0.1180556,
+        "width": 0.7013889,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 10421,
+      "cell": 70,
+      "art": "Obelisk",
+      "biome": "Highland",
+      "sourceModelId": 0,
+      "landOffset": 2.75,
+      "seaOffset": 2.75,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.744,
+        "y": -1.88,
+        "width": 5.888,
+        "height": 5.6
+      },
+      "artBounds": {
+        "x": 0.1875,
+        "y": 0.1180556,
+        "width": 0.625,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 10422,
+      "cell": 71,
+      "art": "Beacon",
+      "biome": "Highland",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.092,
+        "y": -1.692,
+        "width": 6.184,
+        "height": 5.224
+      },
+      "artBounds": {
+        "x": 0.2152778,
+        "y": 0.1180556,
+        "width": 0.5625,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 19203,
+      "cell": 72,
+      "art": "TreasureMap",
+      "biome": "Evergreen",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.544,
+        "y": -2.468,
+        "width": 4.1392,
+        "height": 3.7808
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.6597222
+      }
+    },
+    {
+      "id": 19201,
+      "cell": 73,
+      "art": "FallenSkeleton",
+      "biome": "Evergreen",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.144,
+        "y": -1.744,
+        "width": 5.504,
+        "height": 4.56
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.5902778
+      }
+    },
+    {
+      "id": 19202,
+      "cell": 74,
+      "art": "Witch",
+      "biome": "Evergreen",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.13914,
+        "y": -2.32661,
+        "width": 1.89206,
+        "height": 1.94023
+      },
+      "artBounds": {
+        "x": 0.1319444,
+        "y": 0.1180556,
+        "width": 0.7291667,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 19216,
+      "cell": 75,
+      "art": "StoneSpirit",
+      "biome": "Evergreen",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.2771,
+        "y": -2.48291,
+        "width": 2.7345,
+        "height": 2.31467
+      },
+      "artBounds": {
+        "x": 0.1180556,
+        "y": 0.1180556,
+        "width": 0.7638889,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 19204,
+      "cell": 22,
+      "art": "SwordMemorial",
+      "biome": "Snow",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 1.2000000476837158,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.64779,
+        "y": -0.44828,
+        "width": 5.4685,
+        "height": 5.39003
+      },
+      "artBounds": {
+        "x": 0.125,
+        "y": 0.1111111,
+        "width": 0.75,
+        "height": 0.7847222
+      }
+    },
+    {
+      "id": 19205,
+      "cell": 76,
+      "art": "EmptyHouse",
+      "biome": "Evergreen",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 2.5999999046325684,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.5,
+        "y": -1.66,
+        "width": 5,
+        "height": 3.912
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.7361111
+      }
+    },
+    {
+      "id": 19206,
+      "cell": 77,
+      "art": "WizardTower",
+      "biome": "Evergreen",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3,
+        "y": -2.12,
+        "width": 6,
+        "height": 5.6
+      },
+      "artBounds": {
+        "x": 0.2569444,
+        "y": 0.1111111,
+        "width": 0.4930556,
+        "height": 0.7847222
+      }
+    },
+    {
+      "id": 19207,
+      "cell": 78,
+      "art": "Mole",
+      "biome": "Evergreen",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.44769,
+        "y": -1.32217,
+        "width": 2.83551,
+        "height": 2.83169
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.6388889
+      }
+    },
+    {
+      "id": 19208,
+      "cell": 79,
+      "art": "TreeNest",
+      "biome": "Evergreen",
+      "sourceModelId": 0,
+      "landOffset": 1.2000000476837158,
+      "seaOffset": 1.2000000476837158,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.47678,
+        "y": -0.47838,
+        "width": 4.95358,
+        "height": 4.11122
+      },
+      "artBounds": {
+        "x": 0.1111111,
+        "y": 0.1180556,
+        "width": 0.7777778,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 19209,
+      "cell": 80,
+      "art": "GoblinMerchant",
+      "biome": "Evergreen",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.28595,
+        "y": -2.45607,
+        "width": 1.75208,
+        "height": 1.79226
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 19210,
+      "cell": 81,
+      "art": "Slime",
+      "biome": "Evergreen",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -0.68365,
+        "y": -2.43657,
+        "width": 1.12,
+        "height": 1.02167
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.5972222
+      }
+    },
+    {
+      "id": 19211,
+      "cell": 82,
+      "art": "Gorgon",
+      "biome": "Evergreen",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -0.90846,
+        "y": -2.42069,
+        "width": 1.94739,
+        "height": 1.84907
+      },
+      "artBounds": {
+        "x": 0.1875,
+        "y": 0.1111111,
+        "width": 0.6319444,
+        "height": 0.7847222
+      }
+    },
+    {
+      "id": 19212,
+      "cell": 83,
+      "art": "SkullMonument",
+      "biome": "Evergreen",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.52,
+        "y": -2.176,
+        "width": 7.04,
+        "height": 5.878
+      },
+      "artBounds": {
+        "x": 0.1319444,
+        "y": 0.1180556,
+        "width": 0.7430556,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 19213,
+      "cell": 84,
+      "art": "ArenaGate",
+      "biome": "Evergreen",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.32696,
+        "y": -2.22988,
+        "width": 4.92703,
+        "height": 1.81803
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1111111,
+        "width": 0.8125,
+        "height": 0.7291667
+      }
+    },
+    {
+      "id": 19214,
+      "cell": 85,
+      "art": "DemonGate",
+      "biome": "Evergreen",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.93247,
+        "y": -2.389,
+        "width": 3.00377,
+        "height": 2.72399
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.7430556
+      }
+    },
+    {
+      "id": 19215,
+      "cell": 86,
+      "art": "DarkTower",
+      "biome": "Evergreen",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.5,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.132,
+        "y": -2.512,
+        "width": 6.264,
+        "height": 5.264
+      },
+      "artBounds": {
+        "x": 0.1458333,
+        "y": 0.1180556,
+        "width": 0.7013889,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 19221,
+      "cell": 87,
+      "art": "Obelisk",
+      "biome": "Evergreen",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 2.25,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.744,
+        "y": -1.88,
+        "width": 5.888,
+        "height": 5.6
+      },
+      "artBounds": {
+        "x": 0.1875,
+        "y": 0.1180556,
+        "width": 0.625,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 19222,
+      "cell": 88,
+      "art": "Beacon",
+      "biome": "Evergreen",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.092,
+        "y": -1.692,
+        "width": 6.184,
+        "height": 5.224
+      },
+      "artBounds": {
+        "x": 0.2152778,
+        "y": 0.1180556,
+        "width": 0.5625,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 10703,
+      "cell": 89,
+      "art": "TreasureMap",
+      "biome": "Desert",
+      "sourceModelId": 0,
+      "landOffset": 3,
+      "seaOffset": 3,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.3765,
+        "y": -1.62423,
+        "width": 1.84796,
+        "height": 0.83333
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.6597222
+      }
+    },
+    {
+      "id": 10701,
+      "cell": 90,
+      "art": "FallenSkeleton",
+      "biome": "Desert",
+      "sourceModelId": 0,
+      "landOffset": 3,
+      "seaOffset": 3,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.144,
+        "y": -1.744,
+        "width": 5.504,
+        "height": 4.56
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.5902778
+      }
+    },
+    {
+      "id": 10702,
+      "cell": 91,
+      "art": "Witch",
+      "biome": "Desert",
+      "sourceModelId": 0,
+      "landOffset": 3,
+      "seaOffset": 3,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.13914,
+        "y": -2.32661,
+        "width": 1.89206,
+        "height": 1.94023
+      },
+      "artBounds": {
+        "x": 0.1319444,
+        "y": 0.1180556,
+        "width": 0.7291667,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 10716,
+      "cell": 92,
+      "art": "StoneSpirit",
+      "biome": "Desert",
+      "sourceModelId": 0,
+      "landOffset": 3,
+      "seaOffset": 3,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.2771,
+        "y": -2.48291,
+        "width": 2.7345,
+        "height": 2.31467
+      },
+      "artBounds": {
+        "x": 0.1180556,
+        "y": 0,
+        "width": 0.7638889,
+        "height": 0.8958333
+      }
+    },
+    {
+      "id": 10704,
+      "cell": 22,
+      "art": "SwordMemorial",
+      "biome": "Snow",
+      "sourceModelId": 0,
+      "landOffset": 3,
+      "seaOffset": 3,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.64779,
+        "y": -0.44828,
+        "width": 5.4685,
+        "height": 5.39003
+      },
+      "artBounds": {
+        "x": 0.125,
+        "y": 0.1111111,
+        "width": 0.75,
+        "height": 0.7847222
+      }
+    },
+    {
+      "id": 10705,
+      "cell": 93,
+      "art": "Oasis",
+      "biome": "Desert",
+      "sourceModelId": 0,
+      "landOffset": 3,
+      "seaOffset": 3,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.49559,
+        "y": -1.92383,
+        "width": 3.91236,
+        "height": 5.35282
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.7569444
+      }
+    },
+    {
+      "id": 10706,
+      "cell": 94,
+      "art": "WizardTower",
+      "biome": "Desert",
+      "sourceModelId": 0,
+      "landOffset": 3,
+      "seaOffset": 3,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.04,
+        "y": -2.17,
+        "width": 6,
+        "height": 5.6
+      },
+      "artBounds": {
+        "x": 0.2569444,
+        "y": 0.1111111,
+        "width": 0.4930556,
+        "height": 0.7847222
+      }
+    },
+    {
+      "id": 10707,
+      "cell": 95,
+      "art": "Mole",
+      "biome": "Desert",
+      "sourceModelId": 0,
+      "landOffset": 3,
+      "seaOffset": 3,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.44769,
+        "y": -1.32217,
+        "width": 2.83551,
+        "height": 2.83169
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.6388889
+      }
+    },
+    {
+      "id": 10708,
+      "cell": 96,
+      "art": "TreeNest",
+      "biome": "Desert",
+      "sourceModelId": 0,
+      "landOffset": 1.2000000476837158,
+      "seaOffset": 1.2000000476837158,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.47678,
+        "y": -0.47838,
+        "width": 4.95358,
+        "height": 4.11122
+      },
+      "artBounds": {
+        "x": 0.1111111,
+        "y": 0.1180556,
+        "width": 0.7777778,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 10709,
+      "cell": 97,
+      "art": "GoblinMerchant",
+      "biome": "Desert",
+      "sourceModelId": 0,
+      "landOffset": 3,
+      "seaOffset": 3,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.28595,
+        "y": -2.45607,
+        "width": 1.75208,
+        "height": 1.79226
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 10710,
+      "cell": 98,
+      "art": "Slime",
+      "biome": "Desert",
+      "sourceModelId": 0,
+      "landOffset": 3,
+      "seaOffset": 3,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -0.68365,
+        "y": -2.43657,
+        "width": 1.12,
+        "height": 1.02167
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.5972222
+      }
+    },
+    {
+      "id": 10711,
+      "cell": 99,
+      "art": "Gorgon",
+      "biome": "Desert",
+      "sourceModelId": 0,
+      "landOffset": 3,
+      "seaOffset": 3,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -0.90846,
+        "y": -2.42069,
+        "width": 1.94739,
+        "height": 1.84907
+      },
+      "artBounds": {
+        "x": 0.1875,
+        "y": 0.1111111,
+        "width": 0.6319444,
+        "height": 0.7847222
+      }
+    },
+    {
+      "id": 10712,
+      "cell": 100,
+      "art": "SkullMonument",
+      "biome": "Desert",
+      "sourceModelId": 0,
+      "landOffset": 3,
+      "seaOffset": 3,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.52,
+        "y": -2.176,
+        "width": 7.04,
+        "height": 5.878
+      },
+      "artBounds": {
+        "x": 0.1319444,
+        "y": 0.1180556,
+        "width": 0.7430556,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 10713,
+      "cell": 101,
+      "art": "ArenaGate",
+      "biome": "Desert",
+      "sourceModelId": 0,
+      "landOffset": 3,
+      "seaOffset": 3,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.32696,
+        "y": -2.22988,
+        "width": 4.92703,
+        "height": 1.81803
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1111111,
+        "width": 0.8125,
+        "height": 0.7291667
+      }
+    },
+    {
+      "id": 10714,
+      "cell": 102,
+      "art": "DemonGate",
+      "biome": "Desert",
+      "sourceModelId": 0,
+      "landOffset": 3,
+      "seaOffset": 3,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.93247,
+        "y": -2.389,
+        "width": 3.00377,
+        "height": 2.72399
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.7430556
+      }
+    },
+    {
+      "id": 10715,
+      "cell": 103,
+      "art": "DarkTower",
+      "biome": "Desert",
+      "sourceModelId": 0,
+      "landOffset": 3.5,
+      "seaOffset": 3,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.132,
+        "y": -2.512,
+        "width": 6.264,
+        "height": 5.264
+      },
+      "artBounds": {
+        "x": 0.1458333,
+        "y": 0.1180556,
+        "width": 0.7013889,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 10721,
+      "cell": 104,
+      "art": "Obelisk",
+      "biome": "Desert",
+      "sourceModelId": 0,
+      "landOffset": 3,
+      "seaOffset": 3,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.744,
+        "y": -1.88,
+        "width": 5.888,
+        "height": 5.6
+      },
+      "artBounds": {
+        "x": 0.1875,
+        "y": 0.1180556,
+        "width": 0.625,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 10722,
+      "cell": 105,
+      "art": "Beacon",
+      "biome": "Desert",
+      "sourceModelId": 0,
+      "landOffset": 3,
+      "seaOffset": 3,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.092,
+        "y": -1.692,
+        "width": 6.184,
+        "height": 5.224
+      },
+      "artBounds": {
+        "x": 0.2152778,
+        "y": 0.1180556,
+        "width": 0.5625,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 19223,
+      "cell": 106,
+      "art": "FloatingTower",
+      "biome": "Volcano",
+      "sourceModelId": 0,
+      "landOffset": 4.300000190734863,
+      "seaOffset": 4.300000190734863,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.75416,
+        "y": -2.76205,
+        "width": 3.51632,
+        "height": 7.26289
+      },
+      "artBounds": {
+        "x": 0.2361111,
+        "y": 0.2291667,
+        "width": 0.5277778,
+        "height": 0.7708333
+      }
+    },
+    {
+      "id": 19225,
+      "cell": 107,
+      "art": "Ruins",
+      "biome": "Volcano",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.91007,
+        "y": -2.56822,
+        "width": 5.614,
+        "height": 6.40605
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 10900,
+      "cell": 108,
+      "art": "TreasureMap",
+      "biome": "Town",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.45563,
+        "y": -1.75529,
+        "width": 5.2024,
+        "height": 1.14663
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.6597222
+      }
+    },
+    {
+      "id": 10901,
+      "cell": 109,
+      "art": "FallenSkeleton",
+      "biome": "Town",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.144,
+        "y": -1.744,
+        "width": 5.504,
+        "height": 4.56
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.5902778
+      }
+    },
+    {
+      "id": 10902,
+      "cell": 110,
+      "art": "Witch",
+      "biome": "Town",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -0.18914,
+        "y": -2.32661,
+        "width": 1.89206,
+        "height": 1.94023
+      },
+      "artBounds": {
+        "x": 0.1319444,
+        "y": 0.1180556,
+        "width": 0.7291667,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 10903,
+      "cell": 111,
+      "art": "Sprite",
+      "biome": "Town",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -0.97481,
+        "y": -2.2547,
+        "width": 1.62693,
+        "height": 1.8858
+      },
+      "artBounds": {
+        "x": 0.1666667,
+        "y": 0.2291667,
+        "width": 0.6666667,
+        "height": 0.5972222
+      }
+    },
+    {
+      "id": 10904,
+      "cell": 112,
+      "art": "ForestPriestess",
+      "biome": "Town",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.06763,
+        "y": -2.4,
+        "width": 1.51141,
+        "height": 2.1
+      },
+      "artBounds": {
+        "x": 0.1180556,
+        "y": 0.1111111,
+        "width": 0.7708333,
+        "height": 0.7847222
+      }
+    },
+    {
+      "id": 10905,
+      "cell": 113,
+      "art": "EmptyHouse",
+      "biome": "Town",
+      "sourceModelId": 0,
+      "landOffset": 3,
+      "seaOffset": 2.5999999046325684,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.5,
+        "y": -1.66,
+        "width": 5,
+        "height": 3.912
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.7361111
+      }
+    },
+    {
+      "id": 10906,
+      "cell": 114,
+      "art": "WizardTower",
+      "biome": "Town",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3,
+        "y": -2.12,
+        "width": 6,
+        "height": 5.6
+      },
+      "artBounds": {
+        "x": 0.2569444,
+        "y": 0.1111111,
+        "width": 0.4930556,
+        "height": 0.7847222
+      }
+    },
+    {
+      "id": 10907,
+      "cell": 115,
+      "art": "Mole",
+      "biome": "Town",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.44769,
+        "y": -1.32217,
+        "width": 2.83551,
+        "height": 2.83169
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.6388889
+      }
+    },
+    {
+      "id": 10908,
+      "cell": 116,
+      "art": "TreeNest",
+      "biome": "Town",
+      "sourceModelId": 0,
+      "landOffset": 1.2000000476837158,
+      "seaOffset": 1.2000000476837158,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.47678,
+        "y": -0.47838,
+        "width": 4.95358,
+        "height": 4.11122
+      },
+      "artBounds": {
+        "x": 0.1111111,
+        "y": 0.1180556,
+        "width": 0.7777778,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 10909,
+      "cell": 117,
+      "art": "GoblinMerchant",
+      "biome": "Town",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.28595,
+        "y": -2.45607,
+        "width": 1.75208,
+        "height": 1.79226
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 10910,
+      "cell": 118,
+      "art": "Slime",
+      "biome": "Town",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -0.68365,
+        "y": -2.43657,
+        "width": 1.12,
+        "height": 1.02167
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.5972222
+      }
+    },
+    {
+      "id": 10911,
+      "cell": 119,
+      "art": "Gorgon",
+      "biome": "Town",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -0.90846,
+        "y": -2.42069,
+        "width": 1.94739,
+        "height": 1.84907
+      },
+      "artBounds": {
+        "x": 0.1875,
+        "y": 0.1111111,
+        "width": 0.6319444,
+        "height": 0.7847222
+      }
+    },
+    {
+      "id": 10912,
+      "cell": 120,
+      "art": "SkullMonument",
+      "biome": "Town",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.52,
+        "y": -2.176,
+        "width": 7.04,
+        "height": 5.878
+      },
+      "artBounds": {
+        "x": 0.1319444,
+        "y": 0.1180556,
+        "width": 0.7430556,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 10913,
+      "cell": 121,
+      "art": "ArenaGate",
+      "biome": "Town",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.32696,
+        "y": -2.22988,
+        "width": 4.92703,
+        "height": 1.81803
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1111111,
+        "width": 0.8125,
+        "height": 0.7291667
+      }
+    },
+    {
+      "id": 10914,
+      "cell": 122,
+      "art": "DemonGate",
+      "biome": "Town",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.93247,
+        "y": -2.389,
+        "width": 3.00377,
+        "height": 2.72399
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.7430556
+      }
+    },
+    {
+      "id": 10915,
+      "cell": 123,
+      "art": "DarkTower",
+      "biome": "Town",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.132,
+        "y": -2.512,
+        "width": 6.264,
+        "height": 5.264
+      },
+      "artBounds": {
+        "x": 0.1458333,
+        "y": 0.1180556,
+        "width": 0.7013889,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 10921,
+      "cell": 124,
+      "art": "Obelisk",
+      "biome": "Town",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 2.25,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.744,
+        "y": -1.88,
+        "width": 5.888,
+        "height": 5.6
+      },
+      "artBounds": {
+        "x": 0.1875,
+        "y": 0.1180556,
+        "width": 0.625,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 10922,
+      "cell": 125,
+      "art": "Beacon",
+      "biome": "Town",
+      "sourceModelId": 0,
+      "landOffset": 2.700000047683716,
+      "seaOffset": 2.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.092,
+        "y": -1.692,
+        "width": 6.184,
+        "height": 5.224
+      },
+      "artBounds": {
+        "x": 0.2152778,
+        "y": 0.1180556,
+        "width": 0.5625,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 11000,
+      "cell": 126,
+      "art": "TreasureMap",
+      "biome": "Forest",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.45563,
+        "y": -1.75529,
+        "width": 5.2024,
+        "height": 1.14663
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.6597222
+      }
+    },
+    {
+      "id": 11001,
+      "cell": 127,
+      "art": "FallenSkeleton",
+      "biome": "Forest",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.144,
+        "y": -1.744,
+        "width": 5.504,
+        "height": 4.56
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.5902778
+      }
+    },
+    {
+      "id": 11002,
+      "cell": 128,
+      "art": "Witch",
+      "biome": "Forest",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -0.18914,
+        "y": -2.32661,
+        "width": 1.89206,
+        "height": 1.94023
+      },
+      "artBounds": {
+        "x": 0.1319444,
+        "y": 0.1180556,
+        "width": 0.7291667,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 11003,
+      "cell": 129,
+      "art": "Sprite",
+      "biome": "Forest",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -0.97481,
+        "y": -2.2547,
+        "width": 1.62693,
+        "height": 1.8858
+      },
+      "artBounds": {
+        "x": 0.1666667,
+        "y": 0.2291667,
+        "width": 0.6666667,
+        "height": 0.5972222
+      }
+    },
+    {
+      "id": 11004,
+      "cell": 130,
+      "art": "ForestPriestess",
+      "biome": "Forest",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.06763,
+        "y": -2.4,
+        "width": 1.51141,
+        "height": 2.1
+      },
+      "artBounds": {
+        "x": 0.1180556,
+        "y": 0.1111111,
+        "width": 0.7708333,
+        "height": 0.7847222
+      }
+    },
+    {
+      "id": 11005,
+      "cell": 131,
+      "art": "EmptyHouse",
+      "biome": "Forest",
+      "sourceModelId": 0,
+      "landOffset": 3,
+      "seaOffset": 2.5999999046325684,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.5,
+        "y": -1.66,
+        "width": 5,
+        "height": 3.912
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.7361111
+      }
+    },
+    {
+      "id": 11006,
+      "cell": 132,
+      "art": "WizardTower",
+      "biome": "Forest",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3,
+        "y": -2.12,
+        "width": 6,
+        "height": 5.6
+      },
+      "artBounds": {
+        "x": 0.2569444,
+        "y": 0.1111111,
+        "width": 0.4930556,
+        "height": 0.7847222
+      }
+    },
+    {
+      "id": 11007,
+      "cell": 133,
+      "art": "Mole",
+      "biome": "Forest",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.44769,
+        "y": -1.32217,
+        "width": 2.83551,
+        "height": 2.83169
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.6388889
+      }
+    },
+    {
+      "id": 11008,
+      "cell": 134,
+      "art": "TreeNest",
+      "biome": "Forest",
+      "sourceModelId": 0,
+      "landOffset": 1.2000000476837158,
+      "seaOffset": 1.2000000476837158,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.47678,
+        "y": -0.47838,
+        "width": 4.95358,
+        "height": 4.11122
+      },
+      "artBounds": {
+        "x": 0.1111111,
+        "y": 0.1180556,
+        "width": 0.7777778,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 11009,
+      "cell": 135,
+      "art": "GoblinMerchant",
+      "biome": "Forest",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.28595,
+        "y": -2.45607,
+        "width": 1.75208,
+        "height": 1.79226
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 11010,
+      "cell": 136,
+      "art": "Slime",
+      "biome": "Forest",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -0.68365,
+        "y": -2.43657,
+        "width": 1.12,
+        "height": 1.02167
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.5972222
+      }
+    },
+    {
+      "id": 11011,
+      "cell": 137,
+      "art": "Gorgon",
+      "biome": "Forest",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -0.90846,
+        "y": -2.42069,
+        "width": 1.94739,
+        "height": 1.84907
+      },
+      "artBounds": {
+        "x": 0.1875,
+        "y": 0.1111111,
+        "width": 0.6319444,
+        "height": 0.7847222
+      }
+    },
+    {
+      "id": 11012,
+      "cell": 138,
+      "art": "SkullMonument",
+      "biome": "Forest",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.52,
+        "y": -2.176,
+        "width": 7.04,
+        "height": 5.878
+      },
+      "artBounds": {
+        "x": 0.1319444,
+        "y": 0.1180556,
+        "width": 0.7430556,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 11013,
+      "cell": 139,
+      "art": "ArenaGate",
+      "biome": "Forest",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.32696,
+        "y": -2.22988,
+        "width": 4.92703,
+        "height": 1.81803
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1111111,
+        "width": 0.8125,
+        "height": 0.7291667
+      }
+    },
+    {
+      "id": 11014,
+      "cell": 140,
+      "art": "DemonGate",
+      "biome": "Forest",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.93247,
+        "y": -2.389,
+        "width": 3.00377,
+        "height": 2.72399
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.7430556
+      }
+    },
+    {
+      "id": 11015,
+      "cell": 141,
+      "art": "DarkTower",
+      "biome": "Forest",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.132,
+        "y": -2.512,
+        "width": 6.264,
+        "height": 5.264
+      },
+      "artBounds": {
+        "x": 0.1458333,
+        "y": 0.1180556,
+        "width": 0.7013889,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 11021,
+      "cell": 142,
+      "art": "Obelisk",
+      "biome": "Forest",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 2.25,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.744,
+        "y": -1.88,
+        "width": 5.888,
+        "height": 5.6
+      },
+      "artBounds": {
+        "x": 0.1875,
+        "y": 0.1180556,
+        "width": 0.625,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 11022,
+      "cell": 143,
+      "art": "Beacon",
+      "biome": "Forest",
+      "sourceModelId": 0,
+      "landOffset": 2.700000047683716,
+      "seaOffset": 2.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.092,
+        "y": -1.692,
+        "width": 6.184,
+        "height": 5.224
+      },
+      "artBounds": {
+        "x": 0.2152778,
+        "y": 0.1180556,
+        "width": 0.5625,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 21103,
+      "cell": 108,
+      "art": "TreasureMap",
+      "biome": "Town",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.45563,
+        "y": -1.75529,
+        "width": 5.2024,
+        "height": 1.14663
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.6597222
+      }
+    },
+    {
+      "id": 21101,
+      "cell": 109,
+      "art": "FallenSkeleton",
+      "biome": "Town",
+      "sourceModelId": 0,
+      "landOffset": 3.0999999046325684,
+      "seaOffset": 3.0999999046325684,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.144,
+        "y": -1.744,
+        "width": 5.504,
+        "height": 4.56
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.5902778
+      }
+    },
+    {
+      "id": 21102,
+      "cell": 144,
+      "art": "BrewStand",
+      "biome": "Autumn",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.33463,
+        "y": -2.44195,
+        "width": 4.6725,
+        "height": 4.7409
+      },
+      "artBounds": {
+        "x": 0.1736111,
+        "y": 0.1180556,
+        "width": 0.6597222,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 21104,
+      "cell": 145,
+      "art": "GhostDoll",
+      "biome": "Autumn",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -0.95776,
+        "y": -2.2625,
+        "width": 1.75027,
+        "height": 1.56651
+      },
+      "artBounds": {
+        "x": 0.2152778,
+        "y": 0.2291667,
+        "width": 0.5625,
+        "height": 0.6666667
+      }
+    },
+    {
+      "id": 21105,
+      "cell": 146,
+      "art": "BoneGuard",
+      "biome": "Autumn",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.59084,
+        "y": -2.28,
+        "width": 2.32069,
+        "height": 2.20948
+      },
+      "artBounds": {
+        "x": 0.1736111,
+        "y": 0.1180556,
+        "width": 0.6458333,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 21106,
+      "cell": 113,
+      "art": "EmptyHouse",
+      "biome": "Town",
+      "sourceModelId": 0,
+      "landOffset": 3.0999999046325684,
+      "seaOffset": 3.0999999046325684,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.5,
+        "y": -1.66,
+        "width": 5,
+        "height": 3.912
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.7361111
+      }
+    },
+    {
+      "id": 21107,
+      "cell": 147,
+      "art": "Reliquary",
+      "biome": "Autumn",
+      "sourceModelId": 0,
+      "landOffset": 3.0999999046325684,
+      "seaOffset": 3.0999999046325684,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.50078,
+        "y": -2.74568,
+        "width": 6.51269,
+        "height": 7.0896
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.7152778
+      }
+    },
+    {
+      "id": 21108,
+      "cell": 115,
+      "art": "Mole",
+      "biome": "Town",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.44769,
+        "y": -1.32217,
+        "width": 2.83551,
+        "height": 2.83169
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.6388889
+      }
+    },
+    {
+      "id": 21110,
+      "cell": 116,
+      "art": "TreeNest",
+      "biome": "Town",
+      "sourceModelId": 0,
+      "landOffset": 1.7000000476837158,
+      "seaOffset": 1.7000000476837158,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.47678,
+        "y": -0.47838,
+        "width": 4.95358,
+        "height": 4.11122
+      },
+      "artBounds": {
+        "x": 0.1111111,
+        "y": 0.1180556,
+        "width": 0.7777778,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 21109,
+      "cell": 117,
+      "art": "GoblinMerchant",
+      "biome": "Town",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.28595,
+        "y": -2.45607,
+        "width": 1.75208,
+        "height": 1.79226
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 21111,
+      "cell": 148,
+      "art": "SmallSkeleton",
+      "biome": "Autumn",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.66084,
+        "y": -2.49991,
+        "width": 4.65069,
+        "height": 2.23939
+      },
+      "artBounds": {
+        "x": 0.2083333,
+        "y": 0.1180556,
+        "width": 0.5833333,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 21112,
+      "cell": 149,
+      "art": "Reaper",
+      "biome": "Autumn",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.3822,
+        "y": -1.14265,
+        "width": 2.31082,
+        "height": 2.90763
+      },
+      "artBounds": {
+        "x": 0.1041667,
+        "y": 0.1180556,
+        "width": 0.7847222,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 21113,
+      "cell": 120,
+      "art": "SkullMonument",
+      "biome": "Town",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.52,
+        "y": -2.176,
+        "width": 7.04,
+        "height": 5.878
+      },
+      "artBounds": {
+        "x": 0.1319444,
+        "y": 0.1180556,
+        "width": 0.7430556,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 21114,
+      "cell": 121,
+      "art": "ArenaGate",
+      "biome": "Town",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.32696,
+        "y": -2.22988,
+        "width": 4.92703,
+        "height": 1.81803
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1111111,
+        "width": 0.8125,
+        "height": 0.7291667
+      }
+    },
+    {
+      "id": 21115,
+      "cell": 122,
+      "art": "DemonGate",
+      "biome": "Town",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -1.93247,
+        "y": -2.389,
+        "width": 3.00377,
+        "height": 2.72399
+      },
+      "artBounds": {
+        "x": 0.0902778,
+        "y": 0.1180556,
+        "width": 0.8125,
+        "height": 0.7430556
+      }
+    },
+    {
+      "id": 21116,
+      "cell": 123,
+      "art": "DarkTower",
+      "biome": "Town",
+      "sourceModelId": 0,
+      "landOffset": 3.700000047683716,
+      "seaOffset": 3.700000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.132,
+        "y": -2.512,
+        "width": 6.264,
+        "height": 5.264
+      },
+      "artBounds": {
+        "x": 0.1458333,
+        "y": 0.1180556,
+        "width": 0.7013889,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 21117,
+      "cell": 124,
+      "art": "Obelisk",
+      "biome": "Town",
+      "sourceModelId": 0,
+      "landOffset": 2.75,
+      "seaOffset": 2.75,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.744,
+        "y": -1.88,
+        "width": 5.888,
+        "height": 5.6
+      },
+      "artBounds": {
+        "x": 0.1875,
+        "y": 0.1180556,
+        "width": 0.625,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 21118,
+      "cell": 125,
+      "art": "Beacon",
+      "biome": "Town",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -3.092,
+        "y": -1.692,
+        "width": 6.184,
+        "height": 5.224
+      },
+      "artBounds": {
+        "x": 0.2152778,
+        "y": 0.1180556,
+        "width": 0.5625,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": 11213,
+      "cell": 150,
+      "art": "AncientCoffin",
+      "biome": "Autumn",
+      "sourceModelId": 0,
+      "landOffset": 3.200000047683716,
+      "seaOffset": 3.200000047683716,
+      "landOffsetX": 0,
+      "seaOffsetX": 0,
+      "worldBounds": {
+        "x": -2.7317,
+        "y": -1.82775,
+        "width": 5.17005,
+        "height": 3.49243
+      },
+      "artBounds": {
+        "x": 0.2361111,
+        "y": 0.1180556,
+        "width": 0.5277778,
+        "height": 0.7777778
+      }
+    },
+    {
+      "id": -7,
+      "cell": 151,
+      "art": "SupplyStall",
+      "biome": "Town",
+      "sourceModelId": 0,
+      "landOffset": 3.2,
+      "seaOffset": 3.2,
+      "landOffsetX": 0,
+      "seaOffsetX": 0
+    }
+  ],
+  "seaMapIds": [
+    1001,
+    1002,
+    1003,
+    1004,
+    72010
+  ]
+}

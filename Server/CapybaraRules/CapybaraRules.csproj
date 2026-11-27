@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <DefineConstants>$(DefineConstants);CAPYBARA_SERVER</DefineConstants>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>../../Bin/</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../Unity/Assets/GameScripts/GameLogic/Capybara/Rules/*.cs" Link="Rules/%(Filename)%(Extension)" />
+    <EmbeddedResource Include="../../Unity/Assets/Resources/GameData.json" LogicalName="GameData.json" />
+    <EmbeddedResource Include="../../Unity/Assets/Resources/OfflineJourneyStops.json" LogicalName="OfflineJourneyStops.json" />
+    <EmbeddedResource Include="../../Unity/Assets/Resources/JourneyEventModels.json" LogicalName="JourneyEventModels.json" />
+  </ItemGroup>
+</Project>
